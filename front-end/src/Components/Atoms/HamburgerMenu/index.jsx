@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
 
 const HamburgerMenuComp = () => {
-  const [menuClicked, SetMenuClicked] = useState(false)
-  const toggleMenu = () => SetMenuClicked(menuClicked ? false : true);
+  const [menuClicked, SetMenuClicked] = useState(false);
+  const toggleMenu = () => SetMenuClicked(!menuClicked);
   return (
     <HamburgerMenu
       isOpen={menuClicked}

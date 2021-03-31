@@ -1,8 +1,0 @@
-{ 
-  "env": {
-  "browser": true,
-  "node": true
-  },
-  "root": true,
-  "extends": ["airbnb", "airbnb/hooks"]
-}

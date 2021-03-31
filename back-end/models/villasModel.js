@@ -5,6 +5,12 @@ const getAll = async () => {
   return villas;
 };
 
+const findByName = async (name) => {
+  const [villas] = await connection.execute('SELECT * FROM villas_imgs WHERE villas_name = ?;', [name]);
+  return villas;
+};
+
 module.exports = {
   getAll,
+  findByName,
 };

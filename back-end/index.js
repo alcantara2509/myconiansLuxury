@@ -8,7 +8,7 @@ const PORT = 3001;
 
 app.use(bodyParser.json());
 
-app.use(express.static(`${__dirname}/assets`));
+app.use(express.static(`${__dirname}/assets/images`));
 
 app.get('/', (_req, res) => res.send('Hello World!'));
 app.use('/blog', routerBlog);

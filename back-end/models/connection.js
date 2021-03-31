@@ -6,7 +6,7 @@ const config = {
   host: process.env.HOSTNAME,
   multipleStatements: true,
   password: process.env.MYSQL_PASSWORD,
-  database: 'LuxuryHolidaysGreece',
+  database: 'MyconianLuxury',
 };
 
 const connection = mysql.createPool(config);

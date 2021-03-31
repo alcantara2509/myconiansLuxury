@@ -21,11 +21,11 @@ ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `MyconianLuxury`.`villas` (
   `villas_id` INT NOT NULL AUTO_INCREMENT,
+  `villas_name` VARCHAR(100) NOT NULL,
+  `cover` VARCHAR(200) NOT NULL DEFAULT '',
   `rooms` INT NOT NULL,
   `baths` INT NOT NULL,
   `guests` INT NOT NULL,
-  `villas_name` VARCHAR(100) NOT NULL,
-  `cover` VARCHAR(200) NOT NULL DEFAULT '',
   PRIMARY KEY (`villas_id`),
   UNIQUE KEY `villas_name` (villas_name)
 ) ENGINE = InnoDB;
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `MyconianLuxury`.`villas_imgs` (
   PRIMARY KEY (`villas_imgs_id`)
 ) ENGINE = InnoDB;
 
-INSERT INTO MyconianLuxury.villas (rooms, baths, guests,villas_name, cover) 
+INSERT INTO MyconianLuxury.villas (villas_name, cover, rooms, baths, guests) 
 VALUES 
 ('Aphrodite', 'http://localhost:3001/villas/cover/Aphrodite.jpeg', 1, 1, 1),
 ('Artemis', 'http://localhost:3001/villas/cover/Artemis.jpg', 1, 1, 1),

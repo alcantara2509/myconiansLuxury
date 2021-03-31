@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cards = (cardProps) => {
   const {
-    image, name, bath, rooms, guests,
+    image, name, guests, rooms, bath,
   } = cardProps;
 
   return (

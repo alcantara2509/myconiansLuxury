@@ -23,9 +23,9 @@ CREATE TABLE IF NOT EXISTS `MyconianLuxury`.`villas` (
   `villas_id` INT NOT NULL AUTO_INCREMENT,
   `villas_name` VARCHAR(100) NOT NULL,
   `cover` VARCHAR(200) NOT NULL DEFAULT '',
+  `guests` INT NOT NULL,
   `rooms` INT NOT NULL,
   `baths` INT NOT NULL,
-  `guests` INT NOT NULL,
   PRIMARY KEY (`villas_id`),
   UNIQUE KEY `villas_name` (villas_name)
 ) ENGINE = InnoDB;
@@ -37,33 +37,33 @@ CREATE TABLE IF NOT EXISTS `MyconianLuxury`.`villas_imgs` (
   PRIMARY KEY (`villas_imgs_id`)
 ) ENGINE = InnoDB;
 
-INSERT INTO MyconianLuxury.villas (villas_name, cover, rooms, baths, guests) 
+INSERT INTO MyconianLuxury.villas (villas_name, cover, guests, rooms, baths) 
 VALUES 
-('Aphrodite', 'http://localhost:3001/villas/cover/Aphrodite.jpeg', 1, 1, 1),
-('Artemis', 'http://localhost:3001/villas/cover/Artemis.jpg', 1, 1, 1),
-('Astrea', 'http://localhost:3001/villas/cover/Astrea.jpg', 1, 1, 1),
-('Athena', 'http://localhost:3001/villas/cover/Athena.jpg', 1, 1, 1),
-('Bia', 'http://localhost:3001/villas/cover/Bia.jpg', 1, 1, 1),
-('Brizo', 'http://localhost:3001/villas/cover/Brizo.jpg', 1, 1, 1),
-('Calypso', 'http://localhost:3001/villas/cover/Calypso.jpg', 1, 1, 1),
-('Cybele', 'http://localhost:3001/villas/cover/Cybele.jpg', 1, 1, 1),
-('Demeter', 'http://localhost:3001/villas/cover/Demeter.jpg', 1, 1, 1),
-('Dione', 'http://localhost:3001/villas/cover/Dione.jpg', 1, 1, 1),
-('Electra', 'http://localhost:3001/villas/cover/Electra.jpg', 1, 1, 1),
-('Eos', 'http://localhost:3001/villas/cover/Eos.jpg', 1, 1, 1),
-('Erato', 'http://localhost:3001/villas/cover/Erato.jpg', 1, 1, 1),
-('Gaia', 'http://localhost:3001/villas/cover/Gaia.jpg', 1, 1, 1),
-('Harmonia', 'http://localhost:3001/villas/cover/Harmonia.jpg', 1, 1, 1),
-('Hera', 'http://localhost:3001/villas/cover/Hera.jpg', 1, 1, 1),
-('Irene', 'http://localhost:3001/villas/cover/Irene.jpg', 1, 1, 1),
-('Iris', 'http://localhost:3001/villas/cover/Iris.jpg', 1, 1, 1),
-('Keres', 'http://localhost:3001/villas/cover/Keres.jpg', 1, 1, 1),
-('Maia', 'http://localhost:3001/villas/cover/Maia.jpg', 1, 1, 1),
-('Nix', 'http://localhost:3001/villas/cover/Nix.jpg', 1, 1, 1),
-('Persephone', 'http://localhost:3001/villas/cover/Persephone.jpg', 1, 1, 1),
-('Phoebe', 'http://localhost:3001/villas/cover/Phoebe.jpg', 1, 1, 1),
-('Selene', 'http://localhost:3001/villas/cover/Selene.jpg', 1, 1, 1),
-('Thalassa', 'http://localhost:3001/villas/cover/Thalassa.jpg', 1, 1, 1);
+('Aphrodite', 'http://localhost:3001/villas/cover/Aphrodite.jpeg', 18, 9, 10),
+('Artemis', 'http://localhost:3001/villas/cover/Artemis.jpg', 8, 4, 4),
+('Astrea', 'http://localhost:3001/villas/cover/Astrea.jpg', 12, 6, 6),
+('Athena', 'http://localhost:3001/villas/cover/Athena.jpg', 2, 1, 1),
+('Bia', 'http://localhost:3001/villas/cover/Bia.jpg', 12, 6, 6),
+('Brizo', 'http://localhost:3001/villas/cover/Brizo.jpg', 10, 5, 5),
+('Calypso', 'http://localhost:3001/villas/cover/Calypso.jpg', 14, 7, 8),
+('Cybele', 'http://localhost:3001/villas/cover/Cybele.jpg', 14, 7, 6),
+('Demeter', 'http://localhost:3001/villas/cover/Demeter.jpg', 20, 10, 10),
+('Dione', 'http://localhost:3001/villas/cover/Dione.jpg', 8, 4, 4),
+('Electra', 'http://localhost:3001/villas/cover/Electra.jpg', 8, 2, 2),
+('Eos', 'http://localhost:3001/villas/cover/Eos.jpg', 6, 3, 4),
+('Erato', 'http://localhost:3001/villas/cover/Erato.jpg', 8, 4, 5),
+('Gaia', 'http://localhost:3001/villas/cover/Gaia.jpg', 8, 4, 3),
+('Harmonia', 'http://localhost:3001/villas/cover/Harmonia.jpg', 8, 4, 4),
+('Hera', 'http://localhost:3001/villas/cover/Hera.jpg', 9, 5, 4),
+('Irene', 'http://localhost:3001/villas/cover/Irene.jpg', 14, 7, 8),
+('Iris', 'http://localhost:3001/villas/cover/Iris.jpg', 16, 8, 9),
+('Keres', 'http://localhost:3001/villas/cover/Keres.jpg', 14, 7, 6),
+('Maia', 'http://localhost:3001/villas/cover/Maia.jpg', 6, 3, 3),
+('Nix', 'http://localhost:3001/villas/cover/Nix.jpg', 10, 5, 3),
+('Persephone', 'http://localhost:3001/villas/cover/Persephone.jpg', 14, 6, 6),
+('Phoebe', 'http://localhost:3001/villas/cover/Phoebe.jpg', 8, 4, 4),
+('Selene', 'http://localhost:3001/villas/cover/Selene.jpg', 10, 5, 4),
+('Thalassa', 'http://localhost:3001/villas/cover/Thalassa.jpg', 10, 5, 5);
 
 INSERT INTO MyconianLuxury.villas_imgs (url, villas_name) 
 VALUES 

@@ -19,3 +19,7 @@
 .icons-size {
   width: 30px;
 }
+
+.heart-selected {
+  background-color: tomato;
+}

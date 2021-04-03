@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-console */
 import React, { useEffect, useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { fecthVillas } from '../../Services/fetchVillas';
 import HamburgerMenuComp from '../../Components/Atoms/HamburgerMenu';
 // import { MainTitle } from '../Components/Atoms/Texts';
@@ -24,6 +25,9 @@ const Villas = () => {
       setIsFetching(false);
     };
     fecthVillasComp();
+
+    const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
+    if (!favoriteVillas) localStorage.setItem('favoriteVillas', JSON.stringify([]));
   }, []);
 
   return (
@@ -42,9 +46,7 @@ const Villas = () => {
                  baths: villa.baths,
                };
                return (
-                 <Link to={`/villas/${villa.villas_name}`}>
-                   <VillaCards cardProps={cardProps} />
-                 </Link>
+                 <VillaCards cardProps={cardProps} />
                );
              })
       }

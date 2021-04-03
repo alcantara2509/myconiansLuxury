@@ -3,5 +3,8 @@
     "fetch": false
   },
   "root": true,
-  "extends": "airbnb"
+  "extends": "airbnb",
+  "rules": {
+    "no-console": "off"
+  }
 }

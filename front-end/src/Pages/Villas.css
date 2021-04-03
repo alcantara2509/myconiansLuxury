@@ -1,0 +1,8 @@
+.seeAllBtn {
+  background: none;
+  border: none;
+}
+
+.seeAllBtnDisable {
+  display: none;
+}

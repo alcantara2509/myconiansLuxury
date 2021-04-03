@@ -6,11 +6,11 @@ import HamburgerMenuComp from '../../Components/Atoms/HamburgerMenu';
 // import { MainTitle } from '../Components/Atoms/Texts';
 import VillaCards from '../../Components/Molecules/Cards';
 import MLContext from '../../Context/MLContext';
+import Loading from '../../Components/Atoms/Loading';
 import './style.css';
 
 const Villas = () => {
   const { isFetching, setIsFetching } = useContext(MLContext);
-  console.log(isFetching);
 
   const [allVillas, setAllVillas] = useState([]);
   const [seeAll, setSeeAll] = useState(10);
@@ -27,7 +27,7 @@ const Villas = () => {
   }, []);
 
   return (
-    isFetching ? <h1>carregando</h1>
+    isFetching ? <Loading type="bubbles" color="black" />
       : (
         <main className="villas-container">
           <HamburgerMenuComp />

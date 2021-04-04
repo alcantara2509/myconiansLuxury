@@ -13,6 +13,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

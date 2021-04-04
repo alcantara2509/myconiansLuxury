@@ -5,7 +5,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  iconGuests, iconRooms, iconBaths, iconFavs, replaceImage,
+  iconGuests, iconRooms, iconBaths, iconFavs, iconFillFavs, replaceImage,
 } from '../../../assets';
 import './style.css';
 
@@ -21,7 +21,7 @@ const VillaCards = ({ cardProps }) => {
   const checkHeart = () => {
     const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
     if (favoriteVillas.includes(name)) {
-      return <img src={iconGuests} alt={name} className="icons-size" />;
+      return <img src={iconFillFavs} alt={name} className="icons-size" />;
     }
     return <img src={iconFavs} alt={name} className="icons-size" />;
   };

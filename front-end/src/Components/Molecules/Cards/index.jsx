@@ -11,14 +11,23 @@ import './style.css';
 
 const VillaCards = ({ cardProps }) => {
   const {
-    image, name, guests, rooms, baths,
+    image, name, guests, rooms, baths, setReload, reload,
   } = cardProps;
 
   const imgError = ({ target }) => {
     target.src = replaceImage;
   };
 
+  const checkHeart = () => {
+    const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
+    if (favoriteVillas.includes(name)) {
+      return <img src={iconGuests} alt={name} className="icons-size" />;
+    }
+    return <img src={iconFavs} alt={name} className="icons-size" />;
+  };
+
   const heartClick = ({ target: { alt } }) => {
+    setReload(reload + 1);
     const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
     if (favoriteVillas.includes(alt)) {
       favoriteVillas.splice(favoriteVillas.indexOf(alt), 1);
@@ -31,7 +40,7 @@ const VillaCards = ({ cardProps }) => {
   return (
     <section key={name} className="card-container">
       <button type="button" onClick={heartClick}>
-        <img src={iconFavs} alt={name} className="icons-size" />
+        {checkHeart()}
       </button>
       <Link to={`/villas/${name}`}>
         <img className="image-size" src={image} onError={imgError} alt={name} />

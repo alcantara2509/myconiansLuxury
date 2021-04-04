@@ -16,19 +16,24 @@ const Villas = () => {
   const [allVillas, setAllVillas] = useState([]);
   const [seeAll, setSeeAll] = useState(10);
   const [classBtn, setClassBtn] = useState('seeAllBtn');
-
+  const [reload, setReload] = useState('');
+  // console.log(reload);
   useEffect(() => {
     setIsFetching(true);
+
     const fecthVillasComp = async () => {
       const apiResponse = await fecthVillas();
       setAllVillas(apiResponse);
       setIsFetching(false);
     };
-    fecthVillasComp();
 
+    fecthVillasComp();
+  }, []);
+
+  useEffect(() => {
     const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
     if (!favoriteVillas) localStorage.setItem('favoriteVillas', JSON.stringify([]));
-  }, []);
+  }, [reload]);
 
   return (
     isFetching ? <Loading type="bubbles" color="black" />
@@ -44,6 +49,8 @@ const Villas = () => {
                  guests: villa.guests,
                  rooms: villa.rooms,
                  baths: villa.baths,
+                 setReload,
+                 reload,
                };
                return (
                  <VillaCards cardProps={cardProps} />

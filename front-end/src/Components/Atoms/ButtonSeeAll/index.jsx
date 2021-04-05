@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 const ButtonSeeAll = ({ btnProps }) => {
   const [classBtn, setClassBtn] = useState('seeAllBtn');
   const { allVillas, setSeeAll } = btnProps;
-  console.log(btnProps);
   return (
     <button
       type="button"

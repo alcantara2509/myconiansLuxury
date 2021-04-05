@@ -6,6 +6,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { iconGuests, iconRooms, iconBaths } from '../../../assets';
 import { imgError, heartClick, checkHeart } from '../../../Utils';
+import { IconsCard } from '../../Atoms';
 import './style.css';
 
 const VillaCards = ({ cardProps }) => {
@@ -23,22 +24,9 @@ const VillaCards = ({ cardProps }) => {
         <h3>{name}</h3>
 
         <section className="infos-container">
-
-          <section className="icons-container">
-            <img src={iconGuests} alt="iconGuests" className="icons-size" />
-            <p>{guests}</p>
-          </section>
-
-          <section className="icons-container">
-            <img src={iconRooms} alt="iconRooms" className="icons-size" />
-            <p>{rooms}</p>
-          </section>
-
-          <section className="icons-container">
-            <img src={iconBaths} alt="iconBaths" className="icons-size" />
-            <p>{baths}</p>
-          </section>
-
+          <IconsCard iconsProps={{ icon: iconGuests, info: guests }} />
+          <IconsCard iconsProps={{ icon: iconRooms, info: rooms }} />
+          <IconsCard iconsProps={{ icon: iconBaths, info: baths }} />
         </section>
       </Link>
     </section>

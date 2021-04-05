@@ -4,9 +4,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-  iconGuests, iconRooms, iconBaths, iconFavs, iconFillFavs, replaceImage,
-} from '../../../assets';
+import { iconGuests, iconRooms, iconBaths } from '../../../assets';
+import { imgError, heartClick, checkHeart } from '../../../Utils';
 import './style.css';
 
 const VillaCards = ({ cardProps }) => {
@@ -14,33 +13,10 @@ const VillaCards = ({ cardProps }) => {
     image, name, guests, rooms, baths, setReload, reload,
   } = cardProps;
 
-  const imgError = ({ target }) => {
-    target.src = replaceImage;
-  };
-
-  const checkHeart = () => {
-    const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
-    if (favoriteVillas.includes(name)) {
-      return <img src={iconFillFavs} alt={name} className="icons-size" />;
-    }
-    return <img src={iconFavs} alt={name} className="icons-size" />;
-  };
-
-  const heartClick = ({ target: { alt } }) => {
-    setReload(reload + 1);
-    const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
-    if (favoriteVillas.includes(alt)) {
-      favoriteVillas.splice(favoriteVillas.indexOf(alt), 1);
-      return localStorage.setItem('favoriteVillas', JSON.stringify(favoriteVillas));
-    }
-    favoriteVillas.push(alt);
-    return localStorage.setItem('favoriteVillas', JSON.stringify(favoriteVillas));
-  };
-
   return (
     <section key={name} className="card-container">
-      <button type="button" onClick={heartClick}>
-        {checkHeart()}
+      <button type="button" onClick={({ target: { alt } }) => heartClick(alt, reload, setReload)}>
+        {checkHeart(name)}
       </button>
       <Link to={`/villas/${name}`}>
         <img className="image-size" src={image} onError={imgError} alt={name} />

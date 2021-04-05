@@ -1,13 +1,11 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-console */
 import React, { useEffect, useState, useContext } from 'react';
-// import { Link } from 'react-router-dom';
 import { fecthVillas } from '../../Services/fetchVillas';
-import HamburgerMenuComp from '../../Components/Atoms/HamburgerMenu';
-// import { MainTitle } from '../Components/Atoms/Texts';
-import VillaCards from '../../Components/Molecules/Cards';
 import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
+import renderVillas from '../../Utils/renderVillas';
+import { ButtonSeeAll } from '../../Components/Atoms';
 import './style.css';
 
 const Villas = () => {
@@ -15,19 +13,16 @@ const Villas = () => {
 
   const [allVillas, setAllVillas] = useState([]);
   const [seeAll, setSeeAll] = useState(10);
-  const [classBtn, setClassBtn] = useState('seeAllBtn');
   const [reload, setReload] = useState('');
-  // console.log(reload);
+
   useEffect(() => {
     setIsFetching(true);
 
-    const fecthVillasComp = async () => {
+    (async () => {
       const apiResponse = await fecthVillas();
       setAllVillas(apiResponse);
       setIsFetching(false);
-    };
-
-    fecthVillasComp();
+    })();
   }, []);
 
   useEffect(() => {
@@ -39,35 +34,8 @@ const Villas = () => {
     isFetching ? <Loading type="bubbles" color="black" />
       : (
         <main className="villas-container">
-          <HamburgerMenuComp />
-          {
-           allVillas.slice(0, seeAll)
-             .map((villa) => {
-               const cardProps = {
-                 image: villa.cover,
-                 name: villa.villas_name,
-                 guests: villa.guests,
-                 rooms: villa.rooms,
-                 baths: villa.baths,
-                 setReload,
-                 reload,
-               };
-               return (
-                 <VillaCards cardProps={cardProps} />
-               );
-             })
-      }
-          <button
-            type="button"
-            className={classBtn}
-            onClick={() => {
-              setSeeAll(allVillas.length);
-              setClassBtn('seeAllBtnDisable');
-            }}
-          >
-            ver todas
-
-          </button>
+          {renderVillas(allVillas, seeAll, setReload, reload)}
+          <ButtonSeeAll btnProps={{ allVillas, setSeeAll }} />
         </main>
       )
   );

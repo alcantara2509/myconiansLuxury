@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:3001/villas/';
+const baseURL = 'http://18.231.112.179:3001/villas/';
 
 export const fecthVillas = async () => {
   const apiRequest = await fetch(baseURL);

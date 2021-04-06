@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import HamburgerMenu from 'react-hamburger-menu';
+import Colors from '../../../Colors';
 import './style.css';
 
 const HamburgerMenuComp = () => {
@@ -14,7 +15,7 @@ const HamburgerMenuComp = () => {
         height={14}
         strokeWidth={2}
         rotate={0}
-        color="#5D6D6A"
+        color={Colors.primaryColor}
         borderRadius={0}
         animationDuration={0.5}
       />

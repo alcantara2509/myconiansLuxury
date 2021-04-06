@@ -2,18 +2,20 @@
 import React from 'react';
 import './style.css';
 
-export const MainTitle = ({ props, children }) => {
-  console.log(props.textColor);
-  console.log(children);
-  return (
-    <h1 className="main-title" style={{ color: props.textColor }}>
-      {children}
-    </h1>
-  );
-};
-
-export const SubTitle = (children) => (
-  <h1 className="sub-title">
+export const MainTitle = ({ props, children }) => (
+  <h2 className="main-title" style={{ color: props.textColor }}>
     {children}
-  </h1>
+  </h2>
+);
+
+export const ItalicHighlight = ({ props, children }) => (
+  <h3 className="italic-highlight" style={{ color: props.textColor }}>
+    {children}
+  </h3>
+);
+
+export const Paragraph = ({ props, children }) => (
+  <p className="paragraph" style={{ color: props.textColor }}>
+    {children}
+  </p>
 );

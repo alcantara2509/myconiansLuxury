@@ -1,5 +1,5 @@
 import React from 'react';
-import VillaCards from '../Components/Molecules/Cards';
+import { VillaCards } from '../Components/Molecules';
 
 const renderVillas = (allVillas, seeAll, setReload, reload) => (
   allVillas.slice(0, seeAll)

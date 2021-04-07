@@ -1,6 +1,8 @@
 import React from 'react';
 import { MenuMobile, HomeBanner } from '../../Components/Molecules';
-import { IntroHome } from '../../Components/Organisms';
+import {
+  IntroHome, VillasHome, YachtHome, ConciergeHome,
+} from '../../Components/Organisms';
 import './style.css';
 
 const Home = () => (
@@ -8,6 +10,9 @@ const Home = () => (
     <MenuMobile />
     <HomeBanner />
     <IntroHome />
+    <VillasHome />
+    <YachtHome />
+    <ConciergeHome />
   </main>
 );
 

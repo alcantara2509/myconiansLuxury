@@ -8,6 +8,8 @@ import iconLogo from './icons/iconLogo.svg';
 import logoSecondary from './icons/logoSecondary.svg';
 import logoBanner from './icons/logoBanner.svg';
 import bannerHome from './images/bannerHome.jpg';
+import villasHome from './images/villasHome.jpg';
+import yachtHome from './images/yachtHome.jpg';
 
 export {
   iconGuests,
@@ -20,4 +22,6 @@ export {
   iconLogo,
   bannerHome,
   logoBanner,
+  villasHome,
+  yachtHome,
 };

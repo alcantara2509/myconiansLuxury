@@ -1,0 +1,12 @@
+.services-molecules-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-icons {
+  margin-top: 40px;
+  width: 38px;
+  text-align: center;
+}

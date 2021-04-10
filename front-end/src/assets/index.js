@@ -10,6 +10,9 @@ import logoBanner from './icons/logoBanner.svg';
 import bannerHome from './images/bannerHome.jpg';
 import villasHome from './images/villasHome.jpg';
 import yachtHome from './images/yachtHome.jpg';
+import iconBespoke from './icons/iconBespoke.svg';
+import iconTravel from './icons/iconTravel.svg';
+import iconConcierge from './icons/iconConcierge.svg';
 
 export {
   iconGuests,
@@ -24,4 +27,7 @@ export {
   logoBanner,
   villasHome,
   yachtHome,
+  iconBespoke,
+  iconTravel,
+  iconConcierge,
 };

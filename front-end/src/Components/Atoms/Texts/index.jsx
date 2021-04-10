@@ -14,6 +14,12 @@ export const ItalicHighlight = ({ props, children }) => (
   </h3>
 );
 
+export const ServicesHomeTitle = ({ props, children }) => (
+  <h3 className="services-home-title" style={{ color: props.textColor }}>
+    {children}
+  </h3>
+);
+
 export const Paragraph = ({ props, children }) => (
   <p className="paragraph" style={{ color: props.textColor }}>
     {children}

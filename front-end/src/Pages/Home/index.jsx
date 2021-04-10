@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuMobile, HomeBanner } from '../../Components/Molecules';
 import {
-  IntroHome, VillasHome, YachtHome, ConciergeHome,
+  IntroHome, VillasHome, YachtHome, ConciergeHome, ServicesHome,
 } from '../../Components/Organisms';
 import './style.css';
 
@@ -13,6 +13,7 @@ const Home = () => (
     <VillasHome />
     <YachtHome />
     <ConciergeHome />
+    <ServicesHome />
   </main>
 );
 

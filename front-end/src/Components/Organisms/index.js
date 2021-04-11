@@ -6,6 +6,7 @@ import ConciergeHome from './ConciergeHome';
 import ServicesHome from './ServicesHome';
 import DarkSection from './DarkSection';
 import Footer from './Footer';
+import MenuContent from './MenuContent';
 
 export {
   AdminLogin,
@@ -16,4 +17,5 @@ export {
   ServicesHome,
   DarkSection,
   Footer,
+  MenuContent,
 };

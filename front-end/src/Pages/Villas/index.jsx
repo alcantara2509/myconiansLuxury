@@ -6,6 +6,7 @@ import Loading from '../../Components/Atoms/Loading';
 import renderVillas from '../../Utils/renderVillas';
 import { ButtonSeeAll } from '../../Components/Atoms';
 import './style.css';
+import Footer from '../../Components/Organisms/Footer';
 
 const Villas = () => {
   const { isFetching, allVillas } = useContext(MLContext);
@@ -24,6 +25,7 @@ const Villas = () => {
         <main className="villas-container">
           {renderVillas(allVillas, seeAll, setReload, reload)}
           <ButtonSeeAll btnProps={{ allVillas, setSeeAll }} />
+          <Footer />
         </main>
       )
   );

@@ -1,0 +1,7 @@
+.dark-section-container {
+  background-color: #1C3C45;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 40px;
+}

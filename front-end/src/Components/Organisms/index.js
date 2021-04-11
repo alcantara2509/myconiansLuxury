@@ -4,6 +4,8 @@ import VillasHome from './VillasHome';
 import YachtHome from './YachtHome';
 import ConciergeHome from './ConciergeHome';
 import ServicesHome from './ServicesHome';
+import DarkSection from './DarkSection';
+import Footer from './Footer';
 
 export {
   AdminLogin,
@@ -12,4 +14,6 @@ export {
   YachtHome,
   ConciergeHome,
   ServicesHome,
+  DarkSection,
+  Footer,
 };

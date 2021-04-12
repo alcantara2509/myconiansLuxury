@@ -1,3 +1,4 @@
+/* eslint-disable import/no-cycle */
 import AdminLogin from './AdminLogin';
 import IntroHome from './IntroHome';
 import VillasHome from './VillasHome';
@@ -7,6 +8,7 @@ import ServicesHome from './ServicesHome';
 import DarkSection from './DarkSection';
 import Footer from './Footer';
 import MenuContent from './MenuContent';
+import IntroVillas from './IntroVillas';
 
 export {
   AdminLogin,
@@ -18,4 +20,5 @@ export {
   DarkSection,
   Footer,
   MenuContent,
+  IntroVillas,
 };

@@ -25,3 +25,9 @@ export const Paragraph = ({ props, children }) => (
     {children}
   </p>
 );
+
+export const BannerTitle = ({ props, children }) => (
+  <h1 className="banner-title" style={{ color: props.textColor }}>
+    {children}
+  </h1>
+);

@@ -5,8 +5,10 @@ import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
 import renderVillas from '../../Utils/renderVillas';
 import { ButtonSeeAll } from '../../Components/Atoms';
-import './style.css';
+import { MenuMobile, PagesBanner } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
+import { IntroVillas } from '../../Components/Organisms';
+import './style.css';
 
 const Villas = () => {
   const { isFetching, allVillas } = useContext(MLContext);
@@ -23,6 +25,9 @@ const Villas = () => {
     isFetching ? <Loading type="bubbles" color="black" />
       : (
         <main className="villas-container">
+          <MenuMobile />
+          <PagesBanner title="luxury villas" color="white" />
+          <IntroVillas />
           {renderVillas(allVillas, seeAll, setReload, reload)}
           <ButtonSeeAll btnProps={{ allVillas, setSeeAll }} />
           <Footer />

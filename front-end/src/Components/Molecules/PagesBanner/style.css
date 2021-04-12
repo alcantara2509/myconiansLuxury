@@ -1,0 +1,15 @@
+.background-banner {
+  height: 76vh;
+  background-color: #1c3c4550;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.banner-info {
+  margin-top: 50%;
+}

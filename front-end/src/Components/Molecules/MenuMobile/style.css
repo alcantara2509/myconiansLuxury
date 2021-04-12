@@ -1,6 +1,6 @@
 .menu-mobile-container {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 52px;
   justify-content: space-between;
 }

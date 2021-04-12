@@ -10,10 +10,10 @@ function App() {
     <div className="App">
       <MLProvider>
         <Switch>
+          <Route path="/villas" component={Villas} />
+          <Route path="/villas/:name" component={VillaDetails} />
+          <Route path="/login" component={AdminLogin} />
           <Route exact path="/" component={Home} />
-          <Route exact path="/villas" component={Villas} />
-          <Route exact path="/villas/:name" component={VillaDetails} />
-          <Route exact path="/login" component={AdminLogin} />
         </Switch>
       </MLProvider>
     </div>

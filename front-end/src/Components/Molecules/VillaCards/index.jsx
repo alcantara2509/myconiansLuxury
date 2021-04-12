@@ -6,8 +6,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { iconGuests, iconRooms, iconBaths } from '../../../assets';
 import { imgError, heartClick, checkHeart } from '../../../Utils';
+import { MainTitle } from '../../Atoms/Texts';
 import { IconsCard } from '../../Atoms';
 import './style.css';
+import Colors from '../../../Colors';
 
 const VillaCards = ({ cardProps }) => {
   const {
@@ -16,12 +18,20 @@ const VillaCards = ({ cardProps }) => {
 
   return (
     <section key={name} className="card-container">
-      <button type="button" onClick={({ target: { alt } }) => heartClick(alt, reload, setReload)}>
+      <button
+        className="fav-button"
+        type="button"
+        onClick={({ target: { alt } }) => heartClick(alt, reload, setReload)}
+      >
         {checkHeart(name)}
       </button>
-      <Link to={`/villas/${name}`}>
+      <Link to={`/villas/${name}`} className="card-link">
         <img className="image-size" src={image} onError={imgError} alt={name} />
-        <h3>{name}</h3>
+        <MainTitle props={{ textColor: Colors.primaryColor }}>
+          Villa
+          {' '}
+          {name}
+        </MainTitle>
 
         <section className="infos-container">
           <IconsCard iconsProps={{ icon: iconGuests, info: guests }} />

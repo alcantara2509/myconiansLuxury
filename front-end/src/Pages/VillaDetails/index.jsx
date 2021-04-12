@@ -12,7 +12,6 @@ const VillaDetails = () => {
   const { isFetching, setIsFetching } = useContext(MLContext);
   const villaName = useLocation().pathname.slice(8);
   const [allImages, setAllImages] = useState([]);
-  console.log(allImages);
 
   useEffect(() => {
     setIsFetching(true);

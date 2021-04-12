@@ -6,7 +6,7 @@ const heartClick = (alt, reload, setReload) => {
     favoriteVillas.splice(favoriteVillas.indexOf(alt), 1);
     return localStorage.setItem('favoriteVillas', JSON.stringify(favoriteVillas));
   }
-  favoriteVillas.push(alt);
+  if (alt) favoriteVillas.push(alt);
   return localStorage.setItem('favoriteVillas', JSON.stringify(favoriteVillas));
 };
 

@@ -25,6 +25,8 @@ button {
   border: none;
   cursor: pointer;
   outline: 0;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 code {

@@ -7,8 +7,9 @@ import renderVillas from '../../Utils/renderVillas';
 import { ButtonSeeAll } from '../../Components/Atoms';
 import { MenuMobile, PagesBanner } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
-import { IntroVillas } from '../../Components/Organisms';
+import { DarkSection, IntroVillas } from '../../Components/Organisms';
 import './style.css';
+import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 
 const Villas = () => {
   const { isFetching, allVillas } = useContext(MLContext);
@@ -30,6 +31,7 @@ const Villas = () => {
           <IntroVillas />
           {renderVillas(allVillas, seeAll, setReload, reload)}
           <ButtonSeeAll btnProps={{ allVillas, setSeeAll }} />
+          <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
           <Footer />
         </main>
       )

@@ -12,6 +12,10 @@
   width: 90%;
 }
 
+.link-logo-menu {
+  display: flex;
+}
+
 .logo-menu-mobile {
   width: 220px;
 }

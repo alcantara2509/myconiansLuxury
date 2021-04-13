@@ -9,6 +9,7 @@ import DarkSection from './DarkSection';
 import Footer from './Footer';
 import MenuContent from './MenuContent';
 import IntroVillas from './IntroVillas';
+import VillaDetailsInfo from './VillaDetailsInfo';
 
 export {
   AdminLogin,
@@ -21,4 +22,5 @@ export {
   Footer,
   MenuContent,
   IntroVillas,
+  VillaDetailsInfo,
 };

@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 const heartClick = (alt, reload, setReload) => {
   setReload(reload + 1);
-  console.log(alt);
   const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
   if (favoriteVillas.includes(alt)) {
     favoriteVillas.splice(favoriteVillas.indexOf(alt), 1);

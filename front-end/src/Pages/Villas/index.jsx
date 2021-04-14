@@ -8,12 +8,11 @@ import { ButtonSeeAll } from '../../Components/Atoms';
 import { MenuMobile, PagesBanner } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
-import './style.css';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
+import './style.css';
 
 const Villas = () => {
   const { isFetching, allVillas } = useContext(MLContext);
-
   const [seeAll, setSeeAll] = useState(10);
   const [reload, setReload] = useState('');
 

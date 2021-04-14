@@ -16,6 +16,8 @@ const VillaDetailsInfo = () => {
   return (
     <section className="infos-container-details">
       <MainTitle props={{ textColor: Colors.primaryColor }}>
+        villa
+        {' '}
         {villaName}
       </MainTitle>
       {

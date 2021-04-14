@@ -1,3 +1,14 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.alice-carousel {
+  overflow: hidden;
+  width: 100vw;
+}
+
 .cover-size {
+  width: 100vw;
+}
+
+.image-size-details {
   width: 100vw;
 }

@@ -1,0 +1,14 @@
+.icons-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.p-icons {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #1C3C45;
+  margin-top: 20px;
+}

@@ -6,7 +6,7 @@ const IconsCard = ({ iconsProps }) => {
   return (
     <section className="icons-container">
       <img src={icon} alt="iconGuests" className="icons-size" />
-      <p>{info}</p>
+      <p className="p-icons">{info}</p>
     </section>
   );
 };

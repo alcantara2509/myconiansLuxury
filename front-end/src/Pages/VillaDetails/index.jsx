@@ -3,12 +3,14 @@
 /* eslint-disable no-console */
 import React, { useContext, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
+import AliceCarousel from 'react-alice-carousel';
 import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
 import { MenuMobile } from '../../Components/Molecules';
 import { Footer, VillaDetailsInfo } from '../../Components/Organisms';
 import { checkHeart, heartClick, imgError } from '../../Utils';
 import { fetchVillaImages } from '../../Services/fetchVillas';
+import 'react-alice-carousel/lib/alice-carousel.css';
 import './style.css';
 
 const VillaDetails = () => {
@@ -29,6 +31,18 @@ const VillaDetails = () => {
     })();
   }, [villaName]);
 
+  // const handleDragStart = (e) => e.preventDefault();
+
+  const itens = () => allImages.map((image, id) => (
+    <img
+      key={id}
+      className="image-size-details"
+      src={image.url}
+      onError={imgError}
+      alt={image.id}
+    />
+  ));
+
   return (
     isFetching ? <Loading type="bubbles" color="black" />
       : (
@@ -44,17 +58,7 @@ const VillaDetails = () => {
             {checkHeart(villaName)}
           </button>
           <VillaDetailsInfo />
-          {
-            allImages.map((image, id) => (
-              <img
-                key={id}
-                className="image-size"
-                src={image.url}
-                onError={imgError}
-                alt={image.id}
-              />
-            ))
-          }
+          <AliceCarousel items={itens()} disableDotsControls infinite />
           <Footer />
         </main>
       )

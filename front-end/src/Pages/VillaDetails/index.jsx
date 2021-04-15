@@ -1,3 +1,4 @@
+/* eslint-disable import/first */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-console */
@@ -8,7 +9,9 @@ import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
 import { MenuMobile } from '../../Components/Molecules';
 import { Footer, VillaDetailsInfo } from '../../Components/Organisms';
-import { checkHeart, heartClick, imgError } from '../../Utils';
+import {
+  checkHeart, heartClick, imgError, setLocalStorage,
+} from '../../Utils';
 import { fetchVillaImages } from '../../Services/fetchVillas';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import './style.css';
@@ -19,8 +22,11 @@ const VillaDetails = () => {
   } = useContext(MLContext);
 
   const [reload, setReload] = useState('');
-
   const villaName = useLocation().pathname.slice(8);
+
+  useEffect(() => {
+    setLocalStorage();
+  }, [reload]);
 
   useEffect(() => {
     setIsFetching(true);

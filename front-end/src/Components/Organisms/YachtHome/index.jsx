@@ -26,7 +26,7 @@ const LinkSectionHome = () => (
       spectacular beaches.
     </Paragraph>
     <img src={yachtHome} alt="villa" className="link-section-image" />
-    <DarkButton linkTo="/villas">
+    <DarkButton linkTo="/yachts">
       See Yacht Charter
     </DarkButton>
   </section>

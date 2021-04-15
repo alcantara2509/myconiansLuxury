@@ -9,16 +9,16 @@ import { MenuMobile, PagesBanner } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
-import { setLocalStorage } from '../../Utils';
 import './style.css';
 
-const Villas = () => {
+const Yachts = () => {
   const { isFetching, allVillas } = useContext(MLContext);
   const [seeAll, setSeeAll] = useState(10);
   const [reload, setReload] = useState('');
 
   useEffect(() => {
-    setLocalStorage();
+    const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
+    if (!favoriteVillas) localStorage.setItem('favoriteVillas', JSON.stringify([]));
   }, [reload]);
 
   return (
@@ -26,7 +26,7 @@ const Villas = () => {
       : (
         <main className="villas-container">
           <MenuMobile />
-          <PagesBanner title="luxury villas" color="white" />
+          <PagesBanner title="luxury Yachts" color="white" />
           <IntroVillas />
           {renderVillas(allVillas, seeAll, setReload, reload)}
           <ButtonSeeAll btnProps={{ allVillas, setSeeAll }} />
@@ -37,4 +37,4 @@ const Villas = () => {
   );
 };
 
-export default Villas;
+export default Yachts;

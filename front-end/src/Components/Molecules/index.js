@@ -4,6 +4,7 @@ import VillaCards from './VillaCards';
 import HomeBanner from './HomeBanner';
 import PagesBanner from './PagesBanner';
 import ServicesMolecules from './ServicesMolecules';
+import ServicesTypes from './ServicesTypes';
 
 export {
   MenuMobile,
@@ -11,4 +12,5 @@ export {
   HomeBanner,
   PagesBanner,
   ServicesMolecules,
+  ServicesTypes,
 };

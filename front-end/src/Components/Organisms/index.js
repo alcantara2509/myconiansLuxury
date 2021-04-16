@@ -9,6 +9,7 @@ import DarkSection from './DarkSection';
 import Footer from './Footer';
 import MenuContent from './MenuContent';
 import IntroVillas from './IntroVillas';
+import IntroServices from './IntroServices';
 import VillaDetailsInfo from './VillaDetailsInfo';
 
 export {
@@ -22,5 +23,6 @@ export {
   Footer,
   MenuContent,
   IntroVillas,
+  IntroServices,
   VillaDetailsInfo,
 };

@@ -12,8 +12,10 @@ import IntroVillas from './IntroVillas';
 import IntroServices from './IntroServices';
 import IntroEvents from './IntroEvents';
 import IntroWedding from './IntroWedding';
+import IntroParties from './IntroParties';
 import VillaDetailsInfo from './VillaDetailsInfo';
 import WeddingContent from './WeddingContent';
+import PartiesContent from './PartiesContent';
 
 export {
   AdminLogin,
@@ -31,4 +33,6 @@ export {
   IntroWedding,
   VillaDetailsInfo,
   WeddingContent,
+  IntroParties,
+  PartiesContent,
 };

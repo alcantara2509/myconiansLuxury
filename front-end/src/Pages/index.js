@@ -6,6 +6,7 @@ import Yachts from './Yachts';
 import Services from './Services';
 import Events from './Events';
 import Weddings from './Weddings';
+import Parties from './Parties';
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   Services,
   Events,
   Weddings,
+  Parties,
 };

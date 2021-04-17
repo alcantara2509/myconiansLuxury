@@ -16,6 +16,7 @@ import IntroParties from './IntroParties';
 import VillaDetailsInfo from './VillaDetailsInfo';
 import WeddingContent from './WeddingContent';
 import PartiesContent from './PartiesContent';
+import CovidContent from './CovidContent';
 
 export {
   AdminLogin,
@@ -35,4 +36,5 @@ export {
   WeddingContent,
   IntroParties,
   PartiesContent,
+  CovidContent,
 };

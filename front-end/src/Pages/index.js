@@ -7,6 +7,7 @@ import Services from './Services';
 import Events from './Events';
 import Weddings from './Weddings';
 import Parties from './Parties';
+import Covid from './Covid';
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   Events,
   Weddings,
   Parties,
+  Covid,
 };

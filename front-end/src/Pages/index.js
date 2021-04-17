@@ -4,6 +4,7 @@ import VillaDetails from './VillaDetails';
 import Wishlist from './Wishlist';
 import Yachts from './Yachts';
 import Services from './Services';
+import Events from './Events';
 
 export {
   Home,
@@ -12,4 +13,5 @@ export {
   Wishlist,
   Yachts,
   Services,
+  Events,
 };

@@ -5,7 +5,6 @@ import Colors from '../../../Colors';
 import { ServicesTypes } from '../../Molecules';
 import { bannerHome } from '../../../assets';
 import './style.css';
-import { DarkSection } from '..';
 
 const IntroServices = () => (
   <section className="intro-services-container">
@@ -59,7 +58,6 @@ const IntroServices = () => (
       title="aesthetic services"
       paragraph="Hair Stylist | Nails Specialist | Massage Personal Trainer | Yoga Teacher"
     />
-    <DarkSection />
   </section>
 );
 

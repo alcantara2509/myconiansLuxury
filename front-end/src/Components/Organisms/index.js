@@ -10,6 +10,7 @@ import Footer from './Footer';
 import MenuContent from './MenuContent';
 import IntroVillas from './IntroVillas';
 import IntroServices from './IntroServices';
+import IntroEvents from './IntroEvents';
 import VillaDetailsInfo from './VillaDetailsInfo';
 
 export {
@@ -24,5 +25,6 @@ export {
   MenuContent,
   IntroVillas,
   IntroServices,
+  IntroEvents,
   VillaDetailsInfo,
 };

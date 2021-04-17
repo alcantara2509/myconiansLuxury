@@ -5,6 +5,7 @@ import HomeBanner from './HomeBanner';
 import PagesBanner from './PagesBanner';
 import ServicesMolecules from './ServicesMolecules';
 import ServicesTypes from './ServicesTypes';
+import EventsTypes from './EventsTypes';
 
 export {
   MenuMobile,
@@ -13,4 +14,5 @@ export {
   PagesBanner,
   ServicesMolecules,
   ServicesTypes,
+  EventsTypes,
 };

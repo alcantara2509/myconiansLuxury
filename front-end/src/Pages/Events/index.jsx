@@ -1,16 +1,16 @@
 import React from 'react';
 import { MenuMobile, PagesBanner } from '../../Components/Molecules';
-import { DarkSection, Footer, IntroServices } from '../../Components/Organisms';
+import { DarkSection, Footer, IntroEvents } from '../../Components/Organisms';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 
-const Services = () => (
+const Events = () => (
   <main className="services-page-container">
     <MenuMobile />
-    <PagesBanner title="24/7 services" color="white" />
-    <IntroServices />
+    <PagesBanner title="event planning" color="white" />
+    <IntroEvents />
     <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
     <Footer />
   </main>
 );
 
-export default Services;
+export default Events;

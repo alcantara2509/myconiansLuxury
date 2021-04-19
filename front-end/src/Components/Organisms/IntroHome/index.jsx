@@ -1,7 +1,8 @@
+/* eslint-disable import/no-cycle */
 import React from 'react';
 import { MainTitle, ItalicHighlight, Paragraph } from '../../Atoms/Texts';
-import { EnquireButton } from '../../Atoms';
 import Colors from '../../../Colors';
+import { Form } from '..';
 import './style.css';
 
 const IntroHome = () => (
@@ -29,7 +30,7 @@ const IntroHome = () => (
       <br />
       experiences in the greek islands.
     </Paragraph>
-    <EnquireButton />
+    <Form />
   </section>
 );
 

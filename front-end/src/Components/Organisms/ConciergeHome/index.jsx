@@ -2,9 +2,10 @@
 import React from 'react';
 import { MainTitle, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
-import { yachtHome } from '../../../assets';
+// import { yachtHome } from '../../../assets';
 import { DarkButton } from '../../Atoms';
 import './style.css';
+import asd from '../../../assets/images/asd.svg';
 
 const LinkSectionHome = () => (
   <section className="link-section-home">
@@ -25,7 +26,7 @@ const LinkSectionHome = () => (
       <br />
       disposal on all locations.
     </Paragraph>
-    <img src={yachtHome} alt="villa" className="link-section-image" />
+    <img src={asd} alt="villa" className="link-section-image" />
     <DarkButton linkTo="/villas">
       Find out more
     </DarkButton>

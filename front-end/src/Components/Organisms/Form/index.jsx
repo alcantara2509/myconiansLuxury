@@ -1,18 +1,19 @@
+/* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable no-undef */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from 'react';
+import React from 'react';
 import Popup from 'reactjs-popup';
-import Colors from '../../../Colors';
-import { checkHeart, heartClick } from '../../../Utils';
+// import Colors from '../../../Colors';
+// import { checkHeart, heartClick } from '../../../Utils';
 import { EnquireButton } from '../../Atoms';
-import { Paragraph, ServicesHomeTitle } from '../../Atoms/Texts';
+// import { Paragraph, ServicesHomeTitle } from '../../Atoms/Texts';
 import './style.css';
 
-const Form = () => {
-  const [reload, setReload] = useState('');
-  const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
-  return (
+const Form = () =>
+  // const [reload, setReload] = useState('');
+  // const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
+  (
     <Popup
       trigger={EnquireButton}
       modal
@@ -61,7 +62,7 @@ const Form = () => {
               <label htmlFor="notes">Notes, Concierge Services:</label>
               <textarea name="notes" id="notes" cols="30" rows="4" style={{ outline: 0 }} />
             </form>
-            {
+            {/* {
               favoriteVillas
                 ? (
                   <section className="favs-container">
@@ -94,7 +95,7 @@ const Form = () => {
                   </section>
                 )
                 : null
-              }
+              } */}
             <section className="sec-send-btn">
               <button type="button" className="send-btn">send</button>
             </section>
@@ -104,6 +105,4 @@ const Form = () => {
     </Popup>
 
   );
-};
-
 export default Form;

@@ -9,6 +9,7 @@ import { MenuMobile, PagesBanner } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
+import bannerYachts from '../../assets/images/bannerYachts.jpg';
 import './style.css';
 
 const Yachts = () => {
@@ -26,7 +27,7 @@ const Yachts = () => {
       : (
         <main className="villas-container">
           <MenuMobile />
-          <PagesBanner title="luxury Yachts" color="white" />
+          <PagesBanner title="luxury Yachts" color="white" banner={bannerYachts} />
           <IntroVillas />
           {renderVillas(allVillas, seeAll, setReload, reload)}
           <ButtonSeeAll btnProps={{ allVillas, setSeeAll }} />

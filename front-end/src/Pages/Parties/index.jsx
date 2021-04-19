@@ -5,12 +5,13 @@ import {
   DarkSection, Footer, IntroParties, PartiesContent,
 } from '../../Components/Organisms';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
+import { bannerYachtparties } from '../../assets';
 import './style.css';
 
 const Parties = () => (
   <main className="services-page-container">
     <MenuMobile />
-    <PagesBanner title="yacht parties" color="white" />
+    <PagesBanner title="yacht parties" color="white" banner={bannerYachtparties} />
     <IntroParties />
     <PartiesContent />
     <section className="dark-btn-parties">

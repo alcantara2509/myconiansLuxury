@@ -3,7 +3,9 @@ import React from 'react';
 import { MainTitle, ItalicHighlight, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
 import { ServicesTypes, EventsTypes } from '../../Molecules';
-import { bannerHome } from '../../../assets';
+import {
+  bannerWeddings, bannerYachtparties, pictureEvents,
+} from '../../../assets';
 import './style.css';
 
 const IntroEvents = () => (
@@ -34,19 +36,19 @@ const IntroEvents = () => (
       and experience in luxury event planning.
     </ItalicHighlight>
     <EventsTypes
-      image={bannerHome}
+      image={bannerWeddings}
       title="luxury weddings"
       paragraph="Experience your special occasion with us & create memories that will last a lifetime!"
       link="weddings"
     />
     <EventsTypes
-      image={bannerHome}
+      image={bannerYachtparties}
       title="yacht parties"
       paragraph="Yacht parties are a must-have during your holidays in the greek islands!"
       link="parties"
     />
     <ServicesTypes
-      image={bannerHome}
+      image={pictureEvents}
       title="other events"
       paragraph="Private Parties | Corporate Events Bachelor | Baptism | Ceremonies"
     />

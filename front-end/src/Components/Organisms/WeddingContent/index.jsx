@@ -1,5 +1,5 @@
 import React from 'react';
-import { replaceImage } from '../../../assets';
+import { pictureWeddings1, pictureWeddings2, pictureWeddings3 } from '../../../assets';
 import Colors from '../../../Colors';
 import { Paragraph } from '../../Atoms/Texts';
 import './style.css';
@@ -7,7 +7,7 @@ import './style.css';
 const WeddingContent = () => (
   <section className="wedding-content-container">
     <section className="section-wed">
-      <img className="image-size-wedding" src={replaceImage} alt="wedding" />
+      <img className="image-size-wedding" src={pictureWeddings1} alt="wedding" />
       <Paragraph props={{ textColor: Colors.primaryColor }}>
         We bring a fresh perspective and innovative
         <br />
@@ -25,7 +25,7 @@ const WeddingContent = () => (
       </Paragraph>
     </section>
     <section className="section-wed">
-      <img className="image-size-wedding" src={replaceImage} alt="wedding" />
+      <img className="image-size-wedding" src={pictureWeddings2} alt="wedding" />
       <Paragraph props={{ textColor: Colors.primaryColor }}>
         What characterizes us is the fact that we
         <br />
@@ -47,7 +47,7 @@ const WeddingContent = () => (
       </Paragraph>
     </section>
     <section className="section-wed">
-      <img className="image-size-wedding" src={replaceImage} alt="wedding" />
+      <img className="image-size-wedding" src={pictureWeddings3} alt="wedding" />
       <Paragraph props={{ textColor: Colors.primaryColor }}>
         If you are dreaming of a splendid honeymoon
         <br />

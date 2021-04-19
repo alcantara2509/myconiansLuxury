@@ -3,7 +3,9 @@ import React from 'react';
 import { MainTitle, ItalicHighlight, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
 import { ServicesTypes } from '../../Molecules';
-import { bannerHome } from '../../../assets';
+import {
+  pictureConcierge, pictureFood, pictureTransfer, pictureSecurity, pictureAesthetic,
+} from '../../../assets';
 import './style.css';
 
 const IntroServices = () => (
@@ -34,27 +36,27 @@ const IntroServices = () => (
       It&apos;s about quality.
     </ItalicHighlight>
     <ServicesTypes
-      image={bannerHome}
+      image={pictureConcierge}
       title="concierge"
       paragraph="VIP Bookings & Reservations 24/7 Errand Support"
     />
     <ServicesTypes
-      image={bannerHome}
+      image={pictureFood}
       title="food & bar services"
       paragraph="Private chef | Bartender | Butler | Waiter"
     />
     <ServicesTypes
-      image={bannerHome}
+      image={pictureTransfer}
       title="vip transfer"
       paragraph="Private driver | Luxury cars | Jets | Helicopters"
     />
     <ServicesTypes
-      image={bannerHome}
+      image={pictureSecurity}
       title="vip security"
       paragraph="Static & Close Protection | K9 Dogs  Money Shipments | Security Systems"
     />
     <ServicesTypes
-      image={bannerHome}
+      image={pictureAesthetic}
       title="aesthetic services"
       paragraph="Hair Stylist | Nails Specialist | Massage Personal Trainer | Yoga Teacher"
     />

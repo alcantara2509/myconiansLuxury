@@ -1,5 +1,5 @@
 import React from 'react';
-import { replaceImage } from '../../../assets';
+import { pictureYachtparty1, pictureYachtparty2 } from '../../../assets';
 import Colors from '../../../Colors';
 import { Paragraph } from '../../Atoms/Texts';
 import './style.css';
@@ -7,7 +7,7 @@ import './style.css';
 const PartiesContent = () => (
   <section className="wedding-content-container">
     <section className="section-wed">
-      <img className="image-size-wedding" src={replaceImage} alt="wedding" />
+      <img className="image-size-wedding" src={pictureYachtparty1} alt="wedding" />
       <Paragraph props={{ textColor: Colors.primaryColor }}>
         Bachelor, hen party or just a yacht party for
         <br />
@@ -28,7 +28,7 @@ const PartiesContent = () => (
       </Paragraph>
     </section>
     <section className="section-wed">
-      <img className="image-size-wedding" src={replaceImage} alt="wedding" />
+      <img className="image-size-wedding" src={pictureYachtparty2} alt="wedding" />
       <Paragraph props={{ textColor: Colors.primaryColor }}>
         Our extensive knowledge, experience, and
         <br />

@@ -13,6 +13,21 @@ import yachtHome from './images/yachtHome.jpg';
 import iconBespoke from './icons/iconBespoke.svg';
 import iconTravel from './icons/iconTravel.svg';
 import iconConcierge from './icons/iconConcierge.svg';
+import bannerServices from './images/bannerServices.jpg';
+import pictureConcierge from './images/pictureConcierge.jpg';
+import pictureFood from './images/pictureFood.jpeg';
+import pictureTransfer from './images/pictureTransfer.jpeg';
+import pictureSecurity from './images/pictureSecurity.jpg';
+import pictureAesthetic from './images/pictureAesthetic.jpg';
+import bannerEvents from './images/bannerEvents.jpeg';
+import pictureWeddings1 from './images/pictureWeddings1.jpg';
+import pictureWeddings2 from './images/pictureWeddings2.jpg';
+import pictureWeddings3 from './images/pictureWeddings3.jpg';
+import bannerWeddings from './images/bannerWeddings.jpeg';
+import bannerYachtparties from './images/bannerYachtparties.jpg';
+import pictureEvents from './images/pictureEvents.jpg';
+import pictureYachtparty1 from './images/pictureYachtparty1.jpeg';
+import pictureYachtparty2 from './images/pictureYachtparty2.jpg';
 
 export {
   iconGuests,
@@ -30,4 +45,19 @@ export {
   iconBespoke,
   iconTravel,
   iconConcierge,
+  bannerServices,
+  pictureConcierge,
+  pictureFood,
+  pictureTransfer,
+  pictureSecurity,
+  pictureAesthetic,
+  bannerEvents,
+  pictureWeddings1,
+  pictureWeddings2,
+  pictureWeddings3,
+  bannerWeddings,
+  bannerYachtparties,
+  pictureEvents,
+  pictureYachtparty1,
+  pictureYachtparty2,
 };

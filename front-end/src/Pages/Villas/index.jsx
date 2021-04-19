@@ -10,6 +10,7 @@ import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import { setLocalStorage } from '../../Utils';
+import bannerVillas from '../../assets/images/bannerVillas.jpg';
 import './style.css';
 
 const Villas = () => {
@@ -26,7 +27,7 @@ const Villas = () => {
       : (
         <main className="villas-container">
           <MenuMobile />
-          <PagesBanner title="luxury villas" color="white" />
+          <PagesBanner title="luxury villas" color="white" banner={bannerVillas} />
           <IntroVillas />
           {renderVillas(allVillas, seeAll, setReload, reload)}
           <ButtonSeeAll btnProps={{ allVillas, setSeeAll }} />

@@ -2,7 +2,7 @@
 import React from 'react';
 import { MainTitle, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
-import { yachtHome } from '../../../assets';
+import bannerYachts from '../../../assets/images/bannerYachts.jpg';
 import { DarkButton } from '../../Atoms';
 import './style.css';
 
@@ -25,7 +25,7 @@ const LinkSectionHome = () => (
       <br />
       spectacular beaches.
     </Paragraph>
-    <img src={yachtHome} alt="villa" className="link-section-image" />
+    <img src={bannerYachts} alt="villa" className="link-section-image" />
     <DarkButton linkTo="/yachts">
       See Yacht Charter
     </DarkButton>

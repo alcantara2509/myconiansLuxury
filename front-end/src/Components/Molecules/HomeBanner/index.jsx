@@ -4,7 +4,7 @@ import './style.css';
 
 const HomeBanner = () => (
   <section className="banner-container">
-    <section className="background-banner" style={{ backgroundImage: `url(${bannerHome})` }}>
+    <section className="background-banner-home" style={{ backgroundImage: `url(${bannerHome})` }}>
       <img src={logoBanner} alt="logo" className="logo-banner" />
     </section>
   </section>

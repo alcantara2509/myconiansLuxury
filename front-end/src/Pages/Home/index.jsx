@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuMobile, HomeBanner } from '../../Components/Molecules';
+import { MenuMobile, MenuDesktop, HomeBanner } from '../../Components/Molecules';
 import {
   IntroHome, VillasHome, YachtHome, ConciergeHome, ServicesHome, DarkSection, Footer,
 } from '../../Components/Organisms';
@@ -9,6 +9,7 @@ import './style.css';
 const Home = () => (
   <main className="home-container">
     <MenuMobile />
+    <MenuDesktop />
     <HomeBanner />
     <IntroHome />
     <VillasHome />

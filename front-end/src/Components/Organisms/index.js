@@ -18,6 +18,7 @@ import WeddingContent from './WeddingContent';
 import PartiesContent from './PartiesContent';
 import CovidContent from './CovidContent';
 import Form from './Form';
+import VillasHomeDesktop from './VillasHomeDesktop';
 
 export {
   AdminLogin,
@@ -39,4 +40,5 @@ export {
   PartiesContent,
   CovidContent,
   Form,
+  VillasHomeDesktop,
 };

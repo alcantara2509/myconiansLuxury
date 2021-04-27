@@ -2,6 +2,7 @@ import React from 'react';
 import { MenuMobile, MenuDesktop, HomeBanner } from '../../Components/Molecules';
 import {
   IntroHome, VillasHome, YachtHome, ConciergeHome, ServicesHome, DarkSection, Footer,
+  VillasHomeDesktop,
 } from '../../Components/Organisms';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import './style.css';
@@ -13,6 +14,7 @@ const Home = () => (
     <HomeBanner />
     <IntroHome />
     <VillasHome />
+    <VillasHomeDesktop />
     <YachtHome />
     <ConciergeHome />
     <ServicesHome />

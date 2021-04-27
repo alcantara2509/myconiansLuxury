@@ -37,3 +37,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media only screen and (max-width: 800px) {
+  .mobile {
+    display: flex !important;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .mobile {
+    display: none !important;
+  }
+  
+  .desktop {
+    display: flex !important;
+  }
+}

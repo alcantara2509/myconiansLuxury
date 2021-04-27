@@ -26,6 +26,12 @@ export const Paragraph = ({ props, children }) => (
   </p>
 );
 
+export const ParagraphDesktop = ({ props, children }) => (
+  <p className="ParagraphDesktop" style={{ color: props.textColor }}>
+    {children}
+  </p>
+);
+
 export const BannerTitle = ({ props, children }) => (
   <h1 className="banner-title" style={{ color: props.textColor }}>
     {children}

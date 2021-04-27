@@ -28,3 +28,11 @@
   text-align: center;
   margin-top: 26px;
 }
+
+.ParagraphDesktop {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 26px;
+}

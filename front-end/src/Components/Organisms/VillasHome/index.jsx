@@ -7,7 +7,7 @@ import { DarkButton } from '../../Atoms';
 import './style.css';
 
 const LinkSectionHome = () => (
-  <section className="link-section-home">
+  <section className="mobile link-section-home">
     <MainTitle props={{ textColor: Colors.primaryColor }}>
       VILLA HOLIDAYS
     </MainTitle>

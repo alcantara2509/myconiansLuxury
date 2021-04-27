@@ -7,29 +7,24 @@ import './style.css';
 
 const IntroHome = () => (
   <section className="intro-container">
-    <MainTitle props={{ textColor: Colors.primaryColor }}>
-      BESPOKE LUXURY
-      <br />
-      SERVICES AND
-      <br />
-      EXPERIENCES IN
-      <br />
-      MYKONOS
-    </MainTitle>
+    <section className="desktop-intro-title">
+      <MainTitle props={{ textColor: Colors.primaryColor }}>
+        bespoke luxury services and
+        experiences in mykonos
+      </MainTitle>
+    </section>
     <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
       Let us build your dream
-      <br />
       experience in Mykonos.
     </ItalicHighlight>
-    <Paragraph props={{ textColor: Colors.primaryColor }}>
-      From luxury villas to unbelievable tours and
-      <br />
-      excursions. Tailor-made activities, yachting,
-      <br />
-      helicopter rides, water sports and sailing
-      <br />
-      experiences in the greek islands.
-    </Paragraph>
+    <section className="desktop-p-intro">
+      <Paragraph props={{ textColor: Colors.primaryColor }}>
+        From luxury villas to unbelievable tours and
+        excursions. Tailor-made activities, yachting,
+        helicopter rides, water sports and sailing
+        experiences in the greek islands.
+      </Paragraph>
+    </section>
     <Form />
   </section>
 );

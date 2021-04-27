@@ -1,0 +1,25 @@
+.link-section-home-desktop {
+  flex-direction: row;
+  padding: 100px 0;
+  border-bottom: solid 1px #E5E5E5;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-section-home {
+  padding: 100px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: solid 1px #E5E5E5;
+}
+
+.link-section-image {
+  width: 296px;
+  margin: 26px 0;
+}
+
+.villas-home-desk-info {
+  display: flex;
+  flex-direction: column;
+}

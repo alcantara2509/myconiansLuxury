@@ -19,6 +19,8 @@ import PartiesContent from './PartiesContent';
 import CovidContent from './CovidContent';
 import Form from './Form';
 import VillasHomeDesktop from './VillasHomeDesktop';
+import YachtHomeDesktop from './YachtHomeDesktop';
+import ConciergeHomeDesktop from './ConciergeHomeDesktop';
 
 export {
   AdminLogin,
@@ -41,4 +43,6 @@ export {
   CovidContent,
   Form,
   VillasHomeDesktop,
+  YachtHomeDesktop,
+  ConciergeHomeDesktop,
 };

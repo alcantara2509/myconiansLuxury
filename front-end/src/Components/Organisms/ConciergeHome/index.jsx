@@ -4,10 +4,9 @@ import { MainTitle, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
 import bannerServices from '../../../assets/images/bannerServices.jpg';
 import { DarkButton } from '../../Atoms';
-import './style.css';
 
 const LinkSectionHome = () => (
-  <section className="link-section-home">
+  <section className="link-section-home mobile">
     <MainTitle props={{ textColor: Colors.primaryColor }}>
       LUXURY CONCIERGE
     </MainTitle>

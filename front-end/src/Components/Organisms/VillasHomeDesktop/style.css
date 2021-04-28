@@ -6,20 +6,23 @@
   align-items: center;
 }
 
-.link-section-home {
-  padding: 100px 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: solid 1px #E5E5E5;
-}
-
-.link-section-image {
-  width: 296px;
-  margin: 26px 0;
+.link-section-image-desktop {
+  width: 500px;
+  margin: 0 25px;
+  height: 329px;
 }
 
 .villas-home-desk-info {
   display: flex;
   flex-direction: column;
+  margin: 0 25px;
+}
+
+.home-sections-desktop-title {
+  display: flex;
+}
+
+.home-sections-desktop-btn {
+  display: flex;
+  margin-top: 30px;
 }

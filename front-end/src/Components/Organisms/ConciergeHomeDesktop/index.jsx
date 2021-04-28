@@ -2,36 +2,36 @@
 import React from 'react';
 import { MainTitle, ParagraphDesktop } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
-import bannerVillas from '../../../assets/images/bannerVillas.jpg';
+import bannerServices from '../../../assets/images/bannerServices.jpg';
 import { DarkButton } from '../../Atoms';
-import './style.css';
 
 const LinkSectionHome = () => (
   <section className="link-section-home-desktop desktop">
-    <img src={bannerVillas} alt="villa" className="link-section-image-desktop" />
+    <img src={bannerServices} alt="villa" className="link-section-image-desktop" />
     <section className="villas-home-desk-info">
+
       <section className="home-sections-desktop-title">
         <MainTitle props={{ textColor: Colors.primaryColor }}>
-          VILLA HOLIDAYS
+          LUXURY CONCIERGE
         </MainTitle>
       </section>
       <ParagraphDesktop props={{ textColor: Colors.primaryColor }}>
-        Our accommodation portfolio only includes
+        Our leading premium lifestyle management
         <br />
-        the most exclusive properties in Mykonos.
+        and concierge services are provided by a
+        <br />
+        dedicated team of lifestyle managers that
+        <br />
+        always satisfy our clients preferences.
         <br />
         <br />
-        Experience the perfect balance between
+        Your personal concierge will be 24/7 at your
         <br />
-        ultimate luxury and the comfort of your own
-        <br />
-        home. Outstanding villas, breathtaking views,
-        <br />
-        unique experiences you will never forget.
+        disposal on all locations.
       </ParagraphDesktop>
       <section className="home-sections-desktop-btn">
-        <DarkButton linkTo="/villas">
-          See All Villas
+        <DarkButton linkTo="/services">
+          Find out more
         </DarkButton>
       </section>
     </section>

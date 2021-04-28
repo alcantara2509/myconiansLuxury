@@ -2,39 +2,38 @@
 import React from 'react';
 import { MainTitle, ParagraphDesktop } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
-import bannerVillas from '../../../assets/images/bannerVillas.jpg';
+import bannerYachts from '../../../assets/images/bannerYachts.jpg';
 import { DarkButton } from '../../Atoms';
-import './style.css';
 
 const LinkSectionHome = () => (
   <section className="link-section-home-desktop desktop">
-    <img src={bannerVillas} alt="villa" className="link-section-image-desktop" />
     <section className="villas-home-desk-info">
       <section className="home-sections-desktop-title">
         <MainTitle props={{ textColor: Colors.primaryColor }}>
-          VILLA HOLIDAYS
+          LUXURY YACHTING
         </MainTitle>
       </section>
       <ParagraphDesktop props={{ textColor: Colors.primaryColor }}>
-        Our accommodation portfolio only includes
+        Explore the best of Greece on a luxury yacht
         <br />
-        the most exclusive properties in Mykonos.
+        charter. A list of luxury services and activities
+        <br />
+        added to make your yacht holidays unique.
         <br />
         <br />
-        Experience the perfect balance between
+        Charter a yacht and explore the nearby
         <br />
-        ultimate luxury and the comfort of your own
+        islands, practice water sports and discover
         <br />
-        home. Outstanding villas, breathtaking views,
-        <br />
-        unique experiences you will never forget.
+        spectacular beaches.
       </ParagraphDesktop>
       <section className="home-sections-desktop-btn">
-        <DarkButton linkTo="/villas">
-          See All Villas
+        <DarkButton linkTo="/yachts">
+          See Yacht Charter
         </DarkButton>
       </section>
     </section>
+    <img src={bannerYachts} alt="villa" className="link-section-image-desktop" />
   </section>
 );
 

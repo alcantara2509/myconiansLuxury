@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 import AliceCarousel from 'react-alice-carousel';
 import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
-import { MenuMobile } from '../../Components/Molecules';
+import { MenuDesktop, MenuMobile } from '../../Components/Molecules';
 import { Footer, VillaDetailsInfo } from '../../Components/Organisms';
 import {
   checkHeart, heartClick, imgError, setLocalStorage,
@@ -52,10 +52,12 @@ const VillaDetails = () => {
   return (
     isFetching ? <Loading type="bubbles" color="black" />
       : (
-        <main className="villas-container">
+        <main className="villa-details-container">
           <MenuMobile />
-          <img src="" alt="villa cover" className="cover-size" onError={imgError} />
-
+          <MenuDesktop />
+          <section className="villa-details-cover-container">
+            <img src="" alt="villa cover" className="cover-size" onError={imgError} />
+          </section>
           <button
             className="fav-button"
             type="button"

@@ -12,3 +12,41 @@
 .image-size-details {
   width: 100vw;
 }
+
+@media only screen and (min-width: 800px) {
+  .villa-details-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cover-size {
+    width: 60vw;
+  }
+
+  .villa-details-cover-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  .fav-button {
+    padding: 12px 27px;
+    width: 60vw;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .alice-carousel {
+    overflow: hidden;
+    width: 60vw;
+  }
+
+  .image-size-details {
+    width: 900px;
+  }
+
+}

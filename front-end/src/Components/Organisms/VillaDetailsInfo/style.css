@@ -10,3 +10,17 @@
 .testeIcons {
   background-color: brown !important;
 }
+
+@media only screen and (min-width: 800px) {
+  .icons-card-details-desktop-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 680px;
+    margin-top: 30px;
+  }
+
+  .icons-details-container {
+    min-width: 100px;
+  }
+}

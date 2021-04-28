@@ -22,11 +22,11 @@ const VillaDetailsInfo = () => {
       </MainTitle>
       {
         villaInfos ? (
-          <>
+          <section className="icons-card-details-desktop-container">
             <IconsCardDetails iconsProps={{ icon: iconGuests, info: villaInfos.guests, type: 'guests' }} />
             <IconsCardDetails iconsProps={{ icon: iconRooms, info: villaInfos.rooms, type: 'bedrooms' }} />
             <IconsCardDetails iconsProps={{ icon: iconBaths, info: villaInfos.baths, type: 'bathrooms' }} />
-          </>
+          </section>
         ) : null
       }
     </section>

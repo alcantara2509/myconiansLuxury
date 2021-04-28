@@ -5,7 +5,7 @@ import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
 import renderVillas from '../../Utils/renderVillas';
 import { ButtonSeeAll } from '../../Components/Atoms';
-import { MenuMobile, PagesBanner } from '../../Components/Molecules';
+import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
@@ -27,6 +27,7 @@ const Villas = () => {
       : (
         <main className="villas-container">
           <MenuMobile />
+          <MenuDesktop />
           <PagesBanner title="luxury villas" color="white" banner={bannerVillas} />
           <IntroVillas />
           {renderVillas(allVillas, seeAll, setReload, reload)}

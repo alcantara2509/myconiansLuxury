@@ -5,7 +5,7 @@ import Colors from '../../../Colors';
 import './style.css';
 
 const ServicesTypes = ({ image, title, paragraph }) => (
-  <>
+  <section className="services-types-container">
     <img src={image} alt={title} className="image-size-type" />
     <ServicesHomeTitle props={{ textColor: Colors.primaryColor }}>
       {title}
@@ -15,7 +15,7 @@ const ServicesTypes = ({ image, title, paragraph }) => (
         {paragraph}
       </Paragraph>
     </section>
-  </>
+  </section>
 );
 
 export default ServicesTypes;

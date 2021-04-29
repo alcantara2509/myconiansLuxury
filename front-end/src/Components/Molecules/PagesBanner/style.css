@@ -25,4 +25,8 @@
   .banner-info {
     margin-top: 7.5%;
   }
+
+  #srv {
+    background-position-y: center;
+  }
 }

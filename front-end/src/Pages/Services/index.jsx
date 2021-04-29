@@ -1,13 +1,14 @@
 import React from 'react';
-import { MenuMobile, PagesBanner } from '../../Components/Molecules';
+import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import { DarkSection, Footer, IntroServices } from '../../Components/Organisms';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import { bannerServices } from '../../assets';
 
 const Services = () => (
-  <main className="services-page-container">
+  <main className="villas-container">
     <MenuMobile />
-    <PagesBanner title="24/7 services" color="white" banner={bannerServices} />
+    <MenuDesktop />
+    <PagesBanner title="24/7 services" color="white" banner={bannerServices} id="srv" />
     <IntroServices />
     <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
     <Footer />

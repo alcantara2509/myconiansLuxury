@@ -19,7 +19,9 @@ const EventsTypes = ({
       </Paragraph>
     </section>
     <Link to={link} className="find-out-more">
-      Find Out more
+      <Paragraph props={{ textColor: Colors.primaryColor }}>
+        Find Out more
+      </Paragraph>
     </Link>
   </>
 );

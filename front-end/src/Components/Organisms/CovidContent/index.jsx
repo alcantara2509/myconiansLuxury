@@ -5,38 +5,68 @@ import './style.css';
 
 const CovidContent = () => (
   <main className="covid-content-container">
-    <MainTitle props={{ textColor: Colors.primaryColor }}>
-      enjoy your holidays
-      <br />
-      without worries
-    </MainTitle>
-    <Paragraph props={{ textColor: Colors.primaryColor }}>
-      We are prepared to offer you a safe stay in
-      <br />
-      Mykonos, following the Covid-19 measures.
-      <br />
-      <br />
-      Our sanitizing policies are reenforced and our
-      <br />
-      staff is taking every precaution to keep our
-      <br />
-      guests comfortable and healthy. We ensure
-      <br />
-      you will travel with luxury and style, having
-      <br />
-      the peace of mind that your safety is our top
-      <br />
-      priority.
-      <br />
-      <br />
-      <br />
-      <br />
-    </Paragraph>
-    <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-      Please follow the instructions from our
-      <br />
-      staff and enjoy yourself!
-    </ItalicHighlight>
+    <section className="intro-services-content-resp mobile">
+
+      <MainTitle props={{ textColor: Colors.primaryColor }}>
+        enjoy your holidays
+        <br />
+        without worries
+      </MainTitle>
+      <Paragraph props={{ textColor: Colors.primaryColor }}>
+        We are prepared to offer you a safe stay in
+        <br />
+        Mykonos, following the Covid-19 measures.
+        <br />
+        <br />
+        Our sanitizing policies are reenforced and our
+        <br />
+        staff is taking every precaution to keep our
+        <br />
+        guests comfortable and healthy. We ensure
+        <br />
+        you will travel with luxury and style, having
+        <br />
+        the peace of mind that your safety is our top
+        <br />
+        priority.
+        <br />
+        <br />
+        <br />
+        <br />
+      </Paragraph>
+      <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
+        Please follow the instructions from our
+        <br />
+        staff and enjoy yourself!
+      </ItalicHighlight>
+    </section>
+    <section className="intro-services-content-resp desktop">
+
+      <MainTitle props={{ textColor: Colors.primaryColor }}>
+        enjoy your holidays without worries
+      </MainTitle>
+      <Paragraph props={{ textColor: Colors.primaryColor }}>
+        We are prepared to offer you a safe stay in
+        Mykonos, following the Covid-19 measures.
+        <br />
+        <br />
+        Our sanitizing policies are reenforced and our
+        staff is taking every precaution to keep our
+        <br />
+        guests comfortable and healthy. We ensure
+        you will travel with luxury and style, having
+        <br />
+        the peace of mind that your safety is our top priority.
+        <br />
+        <br />
+        <br />
+        <br />
+      </Paragraph>
+      <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
+        Please follow the instructions from our
+        staff and enjoy yourself!
+      </ItalicHighlight>
+    </section>
     <Paragraph props={{ textColor: Colors.primaryColor }}>
       Please wear a mask
       <br />

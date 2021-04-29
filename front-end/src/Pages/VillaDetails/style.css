@@ -30,9 +30,13 @@
     margin-top: 60px;
   }
 
+  .fav-button-villa-details {
+    width: 860px;
+    margin: auto;
+  }
+
   .fav-button {
     padding: 12px 27px;
-    width: 60vw;
     text-align: end;
     display: flex;
     justify-content: flex-end;

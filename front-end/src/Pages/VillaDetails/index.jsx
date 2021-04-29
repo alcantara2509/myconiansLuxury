@@ -58,13 +58,15 @@ const VillaDetails = () => {
           <section className="villa-details-cover-container">
             <img src="" alt="villa cover" className="cover-size" onError={imgError} />
           </section>
-          <button
-            className="fav-button"
-            type="button"
-            onClick={() => heartClick(villaName, reload, setReload)}
-          >
-            {checkHeart(villaName)}
-          </button>
+          <section className="fav-button-villa-details">
+            <button
+              className="fav-button"
+              type="button"
+              onClick={() => heartClick(villaName, reload, setReload)}
+            >
+              {checkHeart(villaName)}
+            </button>
+          </section>
           <VillaDetailsInfo />
           <AliceCarousel items={itens()} disableDotsControls infinite />
           <Footer />

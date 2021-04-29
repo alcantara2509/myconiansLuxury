@@ -1,9 +1,7 @@
 .wishlist-container {
   width: 100vw;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .wish-villa-container {
@@ -13,6 +11,7 @@
   padding: 10px;
   box-shadow: 0px 4px 4px 0px #00000025;
   align-items: center;
+  margin: auto;
 }
 
 .wish-villa-info {
@@ -31,4 +30,29 @@
   margin-top: -20px;
   display: flex;
   padding-left: 16px;
+}
+
+.empty-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.empty-icon {
+  margin-top: 100px;
+  margin-bottom: 24px;
+  width: 68px;
+}
+
+.wish-buttons {
+  display: flex;
+  margin: 100px auto;
+  width: 86%;
+  justify-content: space-around;
+}
+
+@media only screen and (min-width: 800px) {
+  .wish-buttons {
+    width: 330px;
+  }
 }

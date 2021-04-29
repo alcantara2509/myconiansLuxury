@@ -1,6 +1,6 @@
 import React from 'react';
 import { DarkButton } from '../../Components/Atoms';
-import { MenuMobile, PagesBanner } from '../../Components/Molecules';
+import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import {
   DarkSection, Footer, IntroParties, PartiesContent,
 } from '../../Components/Organisms';
@@ -9,8 +9,9 @@ import { bannerYachtparties } from '../../assets';
 import './style.css';
 
 const Parties = () => (
-  <main className="services-page-container">
+  <main className="villas-container">
     <MenuMobile />
+    <MenuDesktop />
     <PagesBanner title="yacht parties" color="white" banner={bannerYachtparties} />
     <IntroParties />
     <PartiesContent />

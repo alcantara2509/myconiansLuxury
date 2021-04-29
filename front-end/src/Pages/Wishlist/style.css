@@ -57,7 +57,7 @@
     display: flex;
     width: 990px;
     flex-wrap: wrap;
-    justify-content: flex-start !important;
+    justify-content: center;
     align-items: center;
     margin: auto;
   }

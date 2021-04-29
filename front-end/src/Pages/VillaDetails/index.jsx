@@ -22,6 +22,7 @@ const VillaDetails = () => {
   } = useContext(MLContext);
 
   const [reload, setReload] = useState('');
+  const [cover, setCover] = useState('');
   const villaName = useLocation().pathname.slice(8);
 
   useEffect(() => {
@@ -36,6 +37,18 @@ const VillaDetails = () => {
       setIsFetching(false);
     })();
   }, [villaName]);
+
+  useEffect(() => {
+    const getCover = () => {
+      const cvr = allImages.find((e) => e.url.includes('Cover'));
+      if (cvr) {
+        setCover(cvr);
+      }
+    };
+
+    getCover();
+  }, [allImages]);
+  console.log(allImages);
 
   // const handleDragStart = (e) => e.preventDefault();
 
@@ -56,7 +69,11 @@ const VillaDetails = () => {
           <MenuMobile />
           <MenuDesktop />
           <section className="villa-details-cover-container">
-            <img src="" alt="villa cover" className="cover-size" onError={imgError} />
+            {
+              cover
+                ? <img src={cover.url} alt="villa cover" className="cover-size" onError={imgError} />
+                : <img src="" alt="villa cover" className="cover-size" onError={imgError} />
+            }
           </section>
           <section className="fav-button-villa-details">
             <button

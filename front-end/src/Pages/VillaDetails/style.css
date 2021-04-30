@@ -13,6 +13,14 @@
   width: 100vw;
 }
 
+.carousel-control-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 26px 0;
+}
+
 @media only screen and (min-width: 800px) {
   .villa-details-container {
     display: flex;
@@ -23,18 +31,18 @@
   .cover-size {
     width: 60vw;
   }
-
+  
   .villa-details-cover-container {
     display: flex;
     justify-content: center;
     margin-top: 60px;
   }
-
+  
   .fav-button-villa-details {
     width: 860px;
     margin: auto;
   }
-
+  
   .fav-button {
     padding: 12px 27px;
     text-align: end;
@@ -43,14 +51,21 @@
     margin: auto;
     margin-top: 10px;
   }
-
+  
   .alice-carousel {
     overflow: hidden;
     width: 60vw;
   }
-
+  
   .image-size-details {
     width: 900px;
   }
+  
+}
 
+@media only screen and (min-width: 1500px) {
+  .alice-carousel {
+    overflow: hidden;
+    width: 47.5vw;
+  }
 }

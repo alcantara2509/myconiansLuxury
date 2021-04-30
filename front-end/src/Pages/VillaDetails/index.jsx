@@ -1,3 +1,7 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 /* eslint-disable import/first */
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable no-param-reassign */
@@ -23,6 +27,7 @@ const VillaDetails = () => {
 
   const [reload, setReload] = useState('');
   const [cover, setCover] = useState('');
+  const [activeIndex, setActiveIndex] = useState(1);
   const villaName = useLocation().pathname.slice(8);
 
   useEffect(() => {
@@ -48,11 +53,8 @@ const VillaDetails = () => {
 
     getCover();
   }, [allImages]);
-  console.log(allImages);
 
-  // const handleDragStart = (e) => e.preventDefault();
-
-  const itens = () => allImages.map((image, id) => (
+  const items = () => allImages.map((image, id) => (
     <img
       key={id}
       className="image-size-details"
@@ -61,6 +63,34 @@ const VillaDetails = () => {
       alt={image.id}
     />
   ));
+
+  const slidePrev = () => {
+    if (activeIndex > 0) setActiveIndex(activeIndex - 1);
+    if (activeIndex <= 0) setActiveIndex(allImages.length - 1);
+  };
+  const slideNext = () => {
+    if (activeIndex <= allImages.length - 1) setActiveIndex(activeIndex + 1);
+    if (activeIndex >= allImages.length - 1) setActiveIndex(0);
+  };
+  const onSlideChange = (e) => {
+    setActiveIndex(e.item);
+  };
+
+  const Carousel = () => [
+    <AliceCarousel
+      items={items()}
+      disableDotsControls
+      disableButtonsControls
+      infinite
+      activeIndex={activeIndex}
+      onSlideChanged={onSlideChange}
+    />,
+    <section className="carousel-control-btns">
+      <div className="btn-prev-c" onClick={slidePrev}>&lang;</div>
+      <div className="slide-counter">{`${activeIndex}/${allImages.length - 1}`}</div>
+      <div className="btn-next-c" onClick={slideNext}>&rang;</div>
+    </section>,
+  ];
 
   return (
     isFetching ? <Loading type="bubbles" color="black" />
@@ -85,7 +115,7 @@ const VillaDetails = () => {
             </button>
           </section>
           <VillaDetailsInfo />
-          <AliceCarousel items={itens()} disableDotsControls infinite />
+          {Carousel()}
           <Footer />
         </main>
       )

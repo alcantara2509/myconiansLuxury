@@ -21,6 +21,7 @@ import Form from './Form';
 import VillasHomeDesktop from './VillasHomeDesktop';
 import YachtHomeDesktop from './YachtHomeDesktop';
 import ConciergeHomeDesktop from './ConciergeHomeDesktop';
+import Features from './Features';
 
 export {
   AdminLogin,
@@ -45,4 +46,5 @@ export {
   VillasHomeDesktop,
   YachtHomeDesktop,
   ConciergeHomeDesktop,
+  Features,
 };

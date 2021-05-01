@@ -10,7 +10,7 @@
 }
 
 .arrow-icon {
-  width: 22px;
+  width: 16px;
   margin: 25px 0;
 }
 
@@ -36,6 +36,21 @@
 }
 
 .social-icons {
-  width: 22px;
-  margin-right: 10px;
+  width: 24px;
+  margin-right: 14px;
+}
+
+@media only screen and (min-width: 800px) {
+  .footer-container {
+    padding: 30px 230px 100px 230px;
+  }
+
+  .footer-elements-container {
+    display: flex;
+  }
+
+  .social-container {
+    margin-left: 100px;
+  }
+
 }

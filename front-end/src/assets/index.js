@@ -5,6 +5,12 @@ import iconFavs from './icons/iconFavs.svg';
 import iconFillFavs from './icons/iconFillFavs.svg';
 import replaceImage from './images/replaceImage.jpeg';
 import iconLogo from './icons/iconLogo.svg';
+import iconLinkedIn from './icons/iconLinkedIn.svg';
+import iconInstagram from './icons/iconInstagram.svg';
+import iconTwitter from './icons/iconTwitter.svg';
+import iconArrowLeft from './icons/iconArrowLeft.svg';
+import iconArrowRight from './icons/iconArrowRight.svg';
+import iconArrowUp from './icons/iconArrowUp.svg';
 import logoSecondary from './icons/logoSecondary.svg';
 import logoBanner from './icons/logoBanner.svg';
 import bannerHome from './images/bannerHome.jpg';
@@ -60,4 +66,10 @@ export {
   pictureEvents,
   pictureYachtparty1,
   pictureYachtparty2,
+  iconLinkedIn,
+  iconInstagram,
+  iconTwitter,
+  iconArrowLeft,
+  iconArrowRight,
+  iconArrowUp,
 };

@@ -21,6 +21,19 @@
   margin: 26px 0;
 }
 
+.slide-counter {
+  margin: 0 14px;
+  margin-top: -30px;
+}
+
+.btn-prev-c {
+  cursor: pointer;
+}
+
+.btn-next-c {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 800px) {
   .villa-details-container {
     display: flex;
@@ -58,6 +71,7 @@
   }
   
   .image-size-details {
+    height: 70vh;
     width: 900px;
   }
   

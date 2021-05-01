@@ -12,22 +12,28 @@ import AliceCarousel from 'react-alice-carousel';
 import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
 import { MenuDesktop, MenuMobile } from '../../Components/Molecules';
-import { Footer, VillaDetailsInfo } from '../../Components/Organisms';
+import {
+  DarkSection, Footer, VillaDetailsInfo, Features,
+} from '../../Components/Organisms';
 import {
   checkHeart, heartClick, imgError, setLocalStorage,
 } from '../../Utils';
 import { fetchVillaImages } from '../../Services/fetchVillas';
 import 'react-alice-carousel/lib/alice-carousel.css';
+import { iconArrowLeft, iconArrowRight } from '../../assets';
 import './style.css';
+import { Paragraph } from '../../Components/Atoms/Texts';
+import Colors from '../../Colors';
+import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 
 const VillaDetails = () => {
   const {
-    isFetching, setAllImages, allImages, setIsFetching,
+    isFetching, setAllImages, allImages, setIsFetching, allVillas,
   } = useContext(MLContext);
 
   const [reload, setReload] = useState('');
   const [cover, setCover] = useState('');
-  const [activeIndex, setActiveIndex] = useState(1);
+  const [activeIndex, setActiveIndex] = useState(0);
   const villaName = useLocation().pathname.slice(8);
 
   useEffect(() => {
@@ -86,9 +92,17 @@ const VillaDetails = () => {
       onSlideChanged={onSlideChange}
     />,
     <section className="carousel-control-btns">
-      <div className="btn-prev-c" onClick={slidePrev}>&lang;</div>
-      <div className="slide-counter">{`${activeIndex}/${allImages.length - 1}`}</div>
-      <div className="btn-next-c" onClick={slideNext}>&rang;</div>
+      <div className="btn-prev-c" onClick={slidePrev}>
+        <img src={iconArrowLeft} alt="icon" />
+      </div>
+      <div className="slide-counter">
+        <Paragraph props={{ textColor: Colors.primaryColor }}>
+          {`${activeIndex + 1} / ${allImages.length}`}
+        </Paragraph>
+      </div>
+      <div className="btn-next-c" onClick={slideNext}>
+        <img src={iconArrowRight} alt="icon" />
+      </div>
     </section>,
   ];
 
@@ -116,6 +130,8 @@ const VillaDetails = () => {
           </section>
           <VillaDetailsInfo />
           {Carousel()}
+          <Features title="property features" allVillas={allVillas} villaName={villaName} />
+          <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
           <Footer />
         </main>
       )

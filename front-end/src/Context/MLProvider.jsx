@@ -3,11 +3,13 @@
 import React, { useEffect, useState } from 'react';
 import MLContext from './MLContext';
 import { fetchVillas } from '../Services/fetchVillas';
+import { fetchYachts } from '../Services/fetchYachts';
 
 function MLProvider({ children }) {
   const [isFetching, setIsFetching] = useState(false);
   const [allVillas, setAllVillas] = useState([]);
   const [allImages, setAllImages] = useState([]);
+  const [allYachts, setAllYachts] = useState([]);
 
   useEffect(() => {
     setIsFetching(true);
@@ -19,6 +21,16 @@ function MLProvider({ children }) {
     })();
   }, []);
 
+  useEffect(() => {
+    setIsFetching(true);
+
+    (async () => {
+      const apiResponseY = await fetchYachts();
+      setAllYachts(apiResponseY);
+      setIsFetching(false);
+    })();
+  }, []);
+
   const ContextValue = {
     isFetching,
     setIsFetching,
@@ -26,6 +38,8 @@ function MLProvider({ children }) {
     setAllVillas,
     allImages,
     setAllImages,
+    allYachts,
+    setAllYachts,
   };
 
   return (

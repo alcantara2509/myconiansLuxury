@@ -3,7 +3,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
-import renderVillas from '../../Utils/renderVillas';
 import { ButtonSeeAll } from '../../Components/Atoms';
 import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
@@ -11,15 +10,18 @@ import { DarkSection, IntroVillas } from '../../Components/Organisms';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import bannerYachts from '../../assets/images/bannerYachts.jpg';
 import './style.css';
+import renderYachts from '../../Utils/renderYachts';
 
 const Yachts = () => {
-  const { isFetching, allVillas } = useContext(MLContext);
+  const { isFetching, allYachts } = useContext(MLContext);
   const [seeAll, setSeeAll] = useState(10);
   const [reload, setReload] = useState('');
 
+  console.log(allYachts);
+
   useEffect(() => {
-    const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
-    if (!favoriteVillas) localStorage.setItem('favoriteVillas', JSON.stringify([]));
+    const favoriteYachts = JSON.parse(localStorage.getItem('favoriteYachts'));
+    if (!favoriteYachts) localStorage.setItem('favoriteYachts', JSON.stringify([]));
   }, [reload]);
 
   return (
@@ -35,8 +37,8 @@ const Yachts = () => {
             subTitle="Making the best of the finest luxury tailor-made vacation, guaranteed."
           />
           <IntroVillas />
-          {renderVillas(allVillas, seeAll, setReload, reload)}
-          <ButtonSeeAll btnProps={{ allVillas, setSeeAll }} />
+          {renderYachts(allYachts, seeAll, setReload, reload)}
+          <ButtonSeeAll btnProps={{ allYachts, setSeeAll }} />
           <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
           <Footer />
         </main>

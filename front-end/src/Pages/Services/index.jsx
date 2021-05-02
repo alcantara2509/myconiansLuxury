@@ -8,7 +8,13 @@ const Services = () => (
   <main className="villas-container">
     <MenuMobile />
     <MenuDesktop />
-    <PagesBanner title="24/7 services" color="white" banner={bannerServices} id="srv" />
+    <PagesBanner
+      title="24/7 services"
+      color="white"
+      banner={bannerServices}
+      id="srv"
+      subTitle="Your personal concierge will be 24/7 at your disposal fulfilling your every wish!"
+    />
     <IntroServices />
     <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
     <Footer />

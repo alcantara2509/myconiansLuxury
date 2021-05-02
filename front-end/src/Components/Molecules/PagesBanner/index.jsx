@@ -1,17 +1,22 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { MainTitle } from '../../Atoms/Texts';
+import { BannerSubTitle, BannerTitle } from '../../Atoms/Texts';
 import './style.css';
 
 const PagesBanner = ({
-  title, color, banner, id,
+  title, color, banner, id, subTitle,
 }) => (
   <section className="banner-container">
     <section className="background-banner" id={id} style={{ backgroundImage: `url(${banner})` }}>
       <section className="banner-info">
-        <MainTitle props={{ textColor: color }}>
+        <BannerTitle props={{ textColor: color }}>
           {title}
-        </MainTitle>
+        </BannerTitle>
+        <section className="banner-sub-container">
+          <BannerSubTitle props={{ textColor: color }}>
+            {subTitle}
+          </BannerSubTitle>
+        </section>
       </section>
     </section>
   </section>

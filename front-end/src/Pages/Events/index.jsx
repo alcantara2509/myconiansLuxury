@@ -8,7 +8,12 @@ const Events = () => (
   <main className="villas-container">
     <MenuMobile />
     <MenuDesktop />
-    <PagesBanner title="event planning" color="white" banner={bannerEvents} />
+    <PagesBanner
+      title="event planning"
+      color="white"
+      banner={bannerEvents}
+      subTitle="More than creating luxury events, we orchestrate memorable experiences."
+    />
     <IntroEvents />
     <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
     <Footer />

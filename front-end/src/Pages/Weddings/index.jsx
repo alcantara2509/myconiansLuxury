@@ -10,7 +10,12 @@ const Weddings = () => (
   <main className="villas-container">
     <MenuMobile />
     <MenuDesktop />
-    <PagesBanner title="luxury weddings" color="white" banner={bannerWeddings} />
+    <PagesBanner
+      title="luxury weddings"
+      color="white"
+      banner={bannerWeddings}
+      subTitle="Let us plan your wedding and create memories that will last a lifetime."
+    />
     <IntroWedding />
     <WeddingContent />
     <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />

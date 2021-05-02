@@ -37,3 +37,9 @@ export const BannerTitle = ({ props, children }) => (
     {children}
   </h1>
 );
+
+export const BannerSubTitle = ({ props, children }) => (
+  <h4 className="banner-subtitle" style={{ color: props.textColor }}>
+    {children}
+  </h4>
+);

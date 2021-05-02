@@ -11,7 +11,7 @@ import { useLocation } from 'react-router-dom';
 import AliceCarousel from 'react-alice-carousel';
 import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
-import { MenuDesktop, MenuMobile } from '../../Components/Molecules';
+import { ExtraServices, MenuDesktop, MenuMobile } from '../../Components/Molecules';
 import {
   DarkSection, Footer, VillaDetailsInfo, Features,
 } from '../../Components/Organisms';
@@ -132,6 +132,7 @@ const VillaDetails = () => {
           {Carousel()}
           <Features title="property features" allVillas={allVillas} villaName={villaName} />
           <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
+          <ExtraServices />
           <Footer />
         </main>
       )

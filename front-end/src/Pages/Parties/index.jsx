@@ -12,7 +12,12 @@ const Parties = () => (
   <main className="villas-container">
     <MenuMobile />
     <MenuDesktop />
-    <PagesBanner title="yacht parties" color="white" banner={bannerYachtparties} />
+    <PagesBanner
+      title="yacht parties"
+      color="white"
+      banner={bannerYachtparties}
+      subTitle="Yacht parties are a must-have during your holidays in the greek islands."
+    />
     <IntroParties />
     <PartiesContent />
     <section className="dark-btn-parties">

@@ -6,13 +6,18 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   background-position-x: center;
 }
 
 .banner-info {
-  margin-top: 50%;
+  margin-bottom: 90px;
+}
+
+.banner-sub-container {
+  width: 220px;
+  margin: 24px auto;
 }
 
 
@@ -29,4 +34,9 @@
   #srv {
     background-position-y: center;
   }
+
+  .banner-sub-container {
+    width: 520px;
+  }
+
 }

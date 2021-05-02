@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ServicesHomeTitle, Paragraph } from '../../Atoms/Texts';
+import { ServicesHomeTitle, Paragraph, ItalicHighlight } from '../../Atoms/Texts';
+import { iconArrowRight } from '../../../assets';
 import Colors from '../../../Colors';
 import './style.css';
 
@@ -19,9 +20,10 @@ const EventsTypes = ({
       </Paragraph>
     </section>
     <Link to={link} className="find-out-more">
-      <Paragraph props={{ textColor: Colors.primaryColor }}>
+      <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
         Find Out more
-      </Paragraph>
+        <img src={iconArrowRight} alt="icon arrow" className="findout-more-arrow" />
+      </ItalicHighlight>
     </Link>
   </>
 );

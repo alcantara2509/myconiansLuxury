@@ -7,6 +7,7 @@ import PagesBanner from './PagesBanner';
 import ServicesMolecules from './ServicesMolecules';
 import ServicesTypes from './ServicesTypes';
 import EventsTypes from './EventsTypes';
+import ExtraServices from './ExtraServices';
 
 export {
   MenuMobile,
@@ -17,4 +18,5 @@ export {
   ServicesMolecules,
   ServicesTypes,
   EventsTypes,
+  ExtraServices,
 };

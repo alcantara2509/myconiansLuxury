@@ -28,7 +28,12 @@ const Villas = () => {
         <main className="villas-container">
           <MenuMobile />
           <MenuDesktop />
-          <PagesBanner title="luxury villas" color="white" banner={bannerVillas} />
+          <PagesBanner
+            title="luxury villas"
+            color="white"
+            banner={bannerVillas}
+            subTitle="The finest private villas in Mykonos - for a memorable holiday."
+          />
           <IntroVillas />
           {renderVillas(allVillas, seeAll, setReload, reload)}
           <ButtonSeeAll btnProps={{ allVillas, setSeeAll }} />

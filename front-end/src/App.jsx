@@ -3,7 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 import AdminLogin from './Components/Organisms/AdminLogin';
 import {
-  Home, Villas, VillaDetails, Wishlist, Yachts, Services, Events, Weddings, Parties, Covid,
+  Home, Villas, VillaDetails, YachtDetails, Wishlist,
+  Yachts, Services, Events, Weddings, Parties, Covid,
 } from './Pages';
 import MLProvider from './Context/MLProvider';
 
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/villas" component={Villas} />
           <Route exact path="/services" component={Services} />
           <Route exact path="/villas/:name" component={VillaDetails} />
+          <Route exact path="/yachts/:name" component={YachtDetails} />
           <Route exact path="/login" component={AdminLogin} />
           <Route exact path="/" component={Home} />
         </Switch>

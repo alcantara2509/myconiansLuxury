@@ -14,6 +14,7 @@ import IntroEvents from './IntroEvents';
 import IntroWedding from './IntroWedding';
 import IntroParties from './IntroParties';
 import VillaDetailsInfo from './VillaDetailsInfo';
+import YachtDetailsInfo from './YachtDetailsInfo';
 import WeddingContent from './WeddingContent';
 import PartiesContent from './PartiesContent';
 import CovidContent from './CovidContent';
@@ -22,6 +23,7 @@ import VillasHomeDesktop from './VillasHomeDesktop';
 import YachtHomeDesktop from './YachtHomeDesktop';
 import ConciergeHomeDesktop from './ConciergeHomeDesktop';
 import Features from './Features';
+import FeaturesYacht from './FeaturesYacht';
 
 export {
   AdminLogin,
@@ -38,6 +40,7 @@ export {
   IntroEvents,
   IntroWedding,
   VillaDetailsInfo,
+  YachtDetailsInfo,
   WeddingContent,
   IntroParties,
   PartiesContent,
@@ -47,4 +50,5 @@ export {
   YachtHomeDesktop,
   ConciergeHomeDesktop,
   Features,
+  FeaturesYacht,
 };

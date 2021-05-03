@@ -2,6 +2,7 @@
 import MenuMobile from './MenuMobile';
 import MenuDesktop from './MenuDesktop';
 import VillaCards from './VillaCards';
+import YachtCards from './YachtCards';
 import HomeBanner from './HomeBanner';
 import PagesBanner from './PagesBanner';
 import ServicesMolecules from './ServicesMolecules';
@@ -13,6 +14,7 @@ export {
   MenuMobile,
   MenuDesktop,
   VillaCards,
+  YachtCards,
   HomeBanner,
   PagesBanner,
   ServicesMolecules,

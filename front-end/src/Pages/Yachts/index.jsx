@@ -3,7 +3,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
-import { ButtonSeeAll } from '../../Components/Atoms';
 import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
@@ -14,7 +13,6 @@ import renderYachts from '../../Utils/renderYachts';
 
 const Yachts = () => {
   const { isFetching, allYachts } = useContext(MLContext);
-  const [seeAll, setSeeAll] = useState(10);
   const [reload, setReload] = useState('');
 
   console.log(allYachts);
@@ -37,8 +35,7 @@ const Yachts = () => {
             subTitle="Making the best of the finest luxury tailor-made vacation, guaranteed."
           />
           <IntroVillas />
-          {renderYachts(allYachts, seeAll, setReload, reload)}
-          <ButtonSeeAll btnProps={{ allYachts, setSeeAll }} />
+          {renderYachts(allYachts, setReload, reload)}
           <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
           <Footer />
         </main>

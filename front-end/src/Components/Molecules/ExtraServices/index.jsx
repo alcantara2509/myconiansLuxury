@@ -18,7 +18,7 @@ const ExtraServices = () => (
     <br />
     <Link to="/services" className="find-out-more">
       <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-        Find Out more
+        FIND OUT MORE
         <img src={iconArrowRight} alt="icon arrow" className="findout-more-arrow" />
       </ItalicHighlight>
     </Link>

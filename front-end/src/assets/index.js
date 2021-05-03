@@ -20,6 +20,8 @@ import yachtHome from './images/yachtHome.jpg';
 import iconBespoke from './icons/iconBespoke.svg';
 import iconTravel from './icons/iconTravel.svg';
 import iconConcierge from './icons/iconConcierge.svg';
+import iconWishlist from './icons/iconWishlist.svg';
+import map from './icons/map.svg';
 import bannerServices from './images/bannerServices.jpg';
 import pictureConcierge from './images/pictureConcierge.jpg';
 import pictureFood from './images/pictureFood.jpeg';
@@ -74,4 +76,6 @@ export {
   iconArrowLeft,
   iconArrowRight,
   iconArrowUp,
+  iconWishlist,
+  map,
 };

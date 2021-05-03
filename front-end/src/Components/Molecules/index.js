@@ -9,6 +9,8 @@ import ServicesMolecules from './ServicesMolecules';
 import ServicesTypes from './ServicesTypes';
 import EventsTypes from './EventsTypes';
 import ExtraServices from './ExtraServices';
+import IslandCruises from './IslandCruises';
+import BespokeServices from './BespokeServices';
 
 export {
   MenuMobile,
@@ -21,4 +23,6 @@ export {
   ServicesTypes,
   EventsTypes,
   ExtraServices,
+  IslandCruises,
+  BespokeServices,
 };

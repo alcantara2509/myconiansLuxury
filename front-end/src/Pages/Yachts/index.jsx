@@ -3,7 +3,9 @@
 import React, { useEffect, useState, useContext } from 'react';
 import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
-import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
+import {
+  IslandCruises, MenuDesktop, MenuMobile, PagesBanner, BespokeServices,
+} from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
@@ -36,6 +38,8 @@ const Yachts = () => {
           />
           <IntroVillas />
           {renderYachts(allYachts, setReload, reload)}
+          <IslandCruises />
+          <BespokeServices />
           <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
           <Footer />
         </main>

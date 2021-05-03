@@ -18,8 +18,8 @@ const Yachts = () => {
   console.log(allYachts);
 
   useEffect(() => {
-    const favoriteYachts = JSON.parse(localStorage.getItem('favoriteYachts'));
-    if (!favoriteYachts) localStorage.setItem('favoriteYachts', JSON.stringify([]));
+    const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
+    if (!favoriteVillas) localStorage.setItem('favoriteVillas', JSON.stringify([]));
   }, [reload]);
 
   return (

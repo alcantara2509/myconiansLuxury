@@ -11,10 +11,11 @@ import { setLocalStorage } from '../../Utils';
 import renderEmpty from './empty';
 import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import wishCard from './wishCard';
+import wishCardYacht from './wishCardYacht';
 import './style.css';
 
 const Wishlist = () => {
-  const { allVillas, isFetching } = useContext(MLContext);
+  const { allVillas, allYachts, isFetching } = useContext(MLContext);
   const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
   const [reload, setReload] = useState('');
 
@@ -24,6 +25,11 @@ const Wishlist = () => {
 
   const list = allVillas.filter((villa) => favoriteVillas
     .find((e) => e.includes(villa.villas_name)));
+
+  const listYachts = allYachts.filter((yacht) => favoriteVillas
+    .find((e) => e.includes(yacht.yachts_name)));
+
+  console.log(listYachts);
 
   return (
     isFetching ? <Loading type="bubbles" color="black" />
@@ -38,14 +44,21 @@ const Wishlist = () => {
           </section>
           <section className="wish-cards-container">
             {
-            list.length > 0 ? wishCard(list, reload, setReload) : renderEmpty()
+            list.length > 0 || listYachts.length > 0
+              ? wishCard(list, reload, setReload) : renderEmpty()
+            }
+          </section>
+          <section className="wish-cards-container-yachts">
+            {
+             list.length > 0 || listYachts.length > 0
+               ? wishCardYacht(listYachts, reload, setReload) : null
             }
           </section>
           <section className="wish-buttons">
             <DarkButton linkTo="/villas">
               See all villas
             </DarkButton>
-            <DarkButton linkTo="/villas">
+            <DarkButton linkTo="/yachts">
               See yacht charter
             </DarkButton>
           </section>

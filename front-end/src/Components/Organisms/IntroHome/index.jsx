@@ -3,14 +3,15 @@ import React from 'react';
 import { MainTitle, ItalicHighlight, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
 import { Form } from '..';
+import languages from '../../../Utils/languages';
+import { english, portuguese } from './languages';
 import './style.css';
 
 const IntroHome = () => (
   <section className="intro-container">
     <section className="desktop-intro-title">
       <MainTitle props={{ textColor: Colors.primaryColor }}>
-        bespoke luxury services and
-        experiences in mykonos
+        {languages(english, portuguese).title}
       </MainTitle>
     </section>
     <ItalicHighlight props={{ textColor: Colors.primaryColor }}>

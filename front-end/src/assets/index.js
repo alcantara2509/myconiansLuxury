@@ -12,6 +12,10 @@ import iconTwitter from './icons/iconTwitter.svg';
 import iconArrowLeft from './icons/iconArrowLeft.svg';
 import iconArrowRight from './icons/iconArrowRight.svg';
 import iconArrowUp from './icons/iconArrowUp.svg';
+import iconArrowDownLanguage from './icons/iconArrowDownLanguage.svg';
+import iconFlagBr from './icons/iconFlagBr.svg';
+import iconFlagUsa from './icons/iconFlagUsa.svg';
+import iconFlagSp from './icons/iconFlagSp.svg';
 import logoSecondary from './icons/logoSecondary.svg';
 import logoBanner from './icons/logoBanner.svg';
 import bannerHome from './images/bannerHome.jpg';
@@ -78,4 +82,8 @@ export {
   iconArrowUp,
   iconWishlist,
   map,
+  iconArrowDownLanguage,
+  iconFlagBr,
+  iconFlagUsa,
+  iconFlagSp,
 };

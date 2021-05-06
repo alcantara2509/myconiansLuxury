@@ -2,7 +2,7 @@
 import React, { useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import { IconsCardDetails } from '../../Atoms';
-import { iconGuests, iconRooms, iconBaths } from '../../../assets';
+import { iconGuests, iconRooms, iconCrew } from '../../../assets';
 import { MainTitle } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
 import MLContext from '../../../Context/MLContext';
@@ -25,7 +25,7 @@ const VillaDetailsInfo = () => {
           <section className="icons-card-details-desktop-container">
             <IconsCardDetails iconsProps={{ icon: iconGuests, info: yachtInfos.guests, type: 'guests' }} />
             <IconsCardDetails iconsProps={{ icon: iconRooms, info: yachtInfos.cabins, type: 'cabins' }} />
-            <IconsCardDetails iconsProps={{ icon: iconBaths, info: yachtInfos.crew, type: 'crew' }} />
+            <IconsCardDetails iconsProps={{ icon: iconCrew, info: yachtInfos.crew, type: 'crew' }} />
           </section>
         ) : null
       }

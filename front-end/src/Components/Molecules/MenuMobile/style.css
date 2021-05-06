@@ -66,6 +66,10 @@ option {
   margin-left: 10px;
 }
 
+.languages-options-selected {
+  font-weight: 800;
+}
+
 @media only screen and (min-width: 800px) {
   .menu-mobile-container {
     display: none;

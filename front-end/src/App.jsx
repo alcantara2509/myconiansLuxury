@@ -15,8 +15,8 @@ function App() {
     const setLocalStorage = () => {
       const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
       if (!favoriteVillas) localStorage.setItem('favoriteVillas', JSON.stringify([]));
-      const selectedLanguage = JSON.parse(localStorage.getItem('selectedLanguage'));
-      if (!selectedLanguage) localStorage.setItem('selectedLanguage', JSON.stringify(''));
+      // const selectedLanguage = JSON.parse(localStorage.getItem('selectedLanguage'));
+      // if (!selectedLanguage) localStorage.setItem('selectedLanguage', JSON.stringify(''));
     };
     setLocalStorage();
   }, []);

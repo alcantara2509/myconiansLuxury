@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 /* eslint-disable import/no-cycle */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { HamburgerMenuComp } from '../../Atoms';
 import {
@@ -11,6 +12,12 @@ import './style.css';
 const MenuMobile = () => {
   const [menuToggle, setMenuToggle] = useState('menu-content-container');
   const [optionsContainer, setOptionsContainer] = useState('languages-options-container');
+  const [selectedLanguage, setSelectedLanguage] = useState('');
+
+  const currLanguage = JSON.parse(localStorage.getItem('language'));
+  useEffect(() => {
+    if (currLanguage) setSelectedLanguage(currLanguage);
+  }, []);
 
   const handleClickToggle = () => {
     if (menuToggle === 'menu-content-container') {
@@ -19,6 +26,12 @@ const MenuMobile = () => {
     if (menuToggle === 'menu-content-container-on') {
       setMenuToggle('menu-content-container');
     }
+  };
+
+  const handleClickLanguage = ({ target: { value } }) => {
+    localStorage.setItem('language', JSON.stringify(value));
+    setSelectedLanguage(value);
+    window.location.reload();
   };
 
   const lang = () => (
@@ -40,16 +53,31 @@ const MenuMobile = () => {
         <img src={iconArrowDownLanguage} alt="icon" />
       </button>
       <section className={optionsContainer}>
-        <button type="button" className="languages-options">
+        <button
+          type="button"
+          className={`${selectedLanguage === 'usa' ? 'languages-options-selected' : ''} languages-options`}
+          onClick={handleClickLanguage}
+          value="usa"
+        >
           English (USA)
           <img src={iconFlagUsa} alt="icon" className="icon-flag" />
         </button>
-        <button type="button" className="languages-options">
+        <button
+          type="button"
+          className={`${selectedLanguage === 'br' ? 'languages-options-selected' : ''} languages-options`}
+          onClick={handleClickLanguage}
+          value="br"
+        >
           Português (BR)
           <img src={iconFlagBr} alt="icon" className="icon-flag" />
         </button>
-        <button type="button" className="languages-options">
-          Spain
+        <button
+          type="button"
+          className={`${selectedLanguage === 'sp' ? 'languages-options-selected' : ''} languages-options`}
+          onClick={handleClickLanguage}
+          value="sp"
+        >
+          Spanish
           <img src={iconFlagSp} alt="icon" className="icon-flag" />
         </button>
       </section>

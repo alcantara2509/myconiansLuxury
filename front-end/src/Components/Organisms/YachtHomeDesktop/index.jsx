@@ -4,32 +4,25 @@ import { MainTitle, ParagraphDesktop } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
 import bannerYachts from '../../../assets/images/bannerYachts.jpg';
 import { DarkButton } from '../../Atoms';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 
 const LinkSectionHome = () => (
   <section className="link-section-home-desktop desktop">
     <section className="villas-home-desk-info">
       <section className="home-sections-desktop-title">
         <MainTitle props={{ textColor: Colors.primaryColor }}>
-          LUXURY YACHTING
+          {languages(english, portuguese, spanish).title}
         </MainTitle>
       </section>
-      <ParagraphDesktop props={{ textColor: Colors.primaryColor }}>
-        Explore the best of Greece on a luxury yacht
-        <br />
-        charter. A list of luxury services and activities
-        <br />
-        added to make your yacht holidays unique.
-        <br />
-        <br />
-        Charter a yacht and explore the nearby
-        <br />
-        islands, practice water sports and discover
-        <br />
-        spectacular beaches.
-      </ParagraphDesktop>
+      <section className="villas-home-paragraph-container">
+        <ParagraphDesktop props={{ textColor: Colors.primaryColor }}>
+          {languages(english, portuguese, spanish).paragraph}
+        </ParagraphDesktop>
+      </section>
       <section className="home-sections-desktop-btn">
         <DarkButton linkTo="/yachts">
-          See Yacht Charter
+          {languages(english, portuguese, spanish).darkButton}
         </DarkButton>
       </section>
     </section>

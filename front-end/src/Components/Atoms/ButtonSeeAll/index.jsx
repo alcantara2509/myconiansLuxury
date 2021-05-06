@@ -1,10 +1,14 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import languages from '../../../Utils/languages';
 import './style.css';
 
 const ButtonSeeAll = ({ btnProps }) => {
   const [classBtn, setClassBtn] = useState('seeAllBtn');
   const { allVillas, setSeeAll } = btnProps;
+  const portuguese = 'ver todas as vilas';
+  const english = 'see all vilas';
+  const spanish = 'see all vilas';
   return (
     <button
       type="button"
@@ -14,7 +18,7 @@ const ButtonSeeAll = ({ btnProps }) => {
         setClassBtn('seeAllBtnDisable');
       }}
     >
-      ver todas
+      {languages(english, portuguese, spanish)}
     </button>
   );
 };

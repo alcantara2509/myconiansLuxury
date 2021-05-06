@@ -1,17 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+import languages from '../../../Utils/languages';
 import './style.css';
 
 const EnquireButton = () => {
-  const [handleClick, setHandleClick] = useState(1);
+  const portuguese = 'Solicitar Orçamento';
+  const english = 'Enquire Today';
+  const spanish = 'Enquire Today';
   return (
     <button
       type="button"
-      onClick={() => setHandleClick(handleClick + 1)}
       className="enquire-button"
     >
-      Enquire Today
+      {languages(english, portuguese, spanish)}
     </button>
   );
 };
-
 export default EnquireButton;

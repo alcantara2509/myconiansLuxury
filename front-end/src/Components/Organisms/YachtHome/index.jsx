@@ -4,29 +4,20 @@ import { MainTitle, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
 import bannerYachts from '../../../assets/images/bannerYachts.jpg';
 import { DarkButton } from '../../Atoms';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 
 const LinkSectionHome = () => (
   <section className="link-section-home mobile">
     <MainTitle props={{ textColor: Colors.primaryColor }}>
-      LUXURY YACHTING
+      {languages(english, portuguese, spanish).title}
     </MainTitle>
     <Paragraph props={{ textColor: Colors.primaryColor }}>
-      Explore the best of Greece on a luxury yacht
-      <br />
-      charter. A list of luxury services and activities
-      <br />
-      added to make your yacht holidays unique.
-      <br />
-      <br />
-      Charter a yacht and explore the nearby
-      <br />
-      islands, practice water sports and discover
-      <br />
-      spectacular beaches.
+      {languages(english, portuguese, spanish).paragraph}
     </Paragraph>
     <img src={bannerYachts} alt="villa" className="link-section-image" />
     <DarkButton linkTo="/yachts">
-      See Yacht Charter
+      {languages(english, portuguese, spanish).darkButton}
     </DarkButton>
   </section>
 );

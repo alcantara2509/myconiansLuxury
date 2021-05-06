@@ -10,9 +10,11 @@ const ServicesMolecules = ({ title, source, children }) => (
     <ServicesHomeTitle props={{ textColor: Colors.primaryColor }}>
       {title}
     </ServicesHomeTitle>
-    <Paragraph props={{ textColor: Colors.primaryColor }}>
-      {children}
-    </Paragraph>
+    <section className="services-molecules-paragraph-container">
+      <Paragraph props={{ textColor: Colors.primaryColor }}>
+        {children}
+      </Paragraph>
+    </section>
   </section>
 );
 

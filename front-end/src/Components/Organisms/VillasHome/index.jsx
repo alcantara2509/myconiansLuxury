@@ -4,30 +4,21 @@ import { MainTitle, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
 import bannerVillas from '../../../assets/images/bannerVillas.jpg';
 import { DarkButton } from '../../Atoms';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const LinkSectionHome = () => (
   <section className="mobile link-section-home">
     <MainTitle props={{ textColor: Colors.primaryColor }}>
-      VILLA HOLIDAYS
+      {languages(english, portuguese, spanish).title}
     </MainTitle>
     <Paragraph props={{ textColor: Colors.primaryColor }}>
-      Our accommodation portfolio only includes
-      <br />
-      the most exclusive properties in Mykonos.
-      <br />
-      <br />
-      Experience the perfect balance between
-      <br />
-      ultimate luxury and the comfort of your own
-      <br />
-      home. Outstanding villas, breathtaking views,
-      <br />
-      unique experiences you will never forget.
+      {languages(english, portuguese, spanish).paragraph}
     </Paragraph>
     <img src={bannerVillas} alt="villa" className="link-section-image" />
     <DarkButton linkTo="/villas">
-      See All Villas
+      {languages(english, portuguese, spanish).darkButton}
     </DarkButton>
   </section>
 );

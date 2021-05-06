@@ -34,7 +34,7 @@ const MenuMobile = () => {
     window.location.reload();
   };
 
-  const lang = () => (
+  const setLanguage = () => (
     <section className="languages-select-container">
       <button
         type="button"
@@ -94,7 +94,7 @@ const MenuMobile = () => {
           <HamburgerMenuComp />
         </button>
       </section>
-      <MenuContent toggle={menuToggle} lang={lang()} />
+      <MenuContent toggle={menuToggle} lang={setLanguage()} />
     </section>
   );
 };

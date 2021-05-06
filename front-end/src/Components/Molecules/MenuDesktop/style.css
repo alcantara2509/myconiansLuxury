@@ -11,6 +11,16 @@
   padding: 0 40px;
 }
 
+.flag-menu-bar {
+  width: 26px;
+  margin-right: 6px;
+}
+
+.language-link {
+  display: flex;
+  align-items: center;
+}
+
 @media only screen and (max-width: 800px) {
   .menu-desktop-container {
     display: none;

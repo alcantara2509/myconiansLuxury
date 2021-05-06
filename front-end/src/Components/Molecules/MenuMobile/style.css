@@ -74,4 +74,12 @@ option {
   .menu-mobile-container {
     display: none;
   }
+  
+  .languages-options-container-on {
+    position: absolute;
+    background-color: white;
+    margin-top: 26px;
+    padding: 20px 30px;
+  }
+
 }

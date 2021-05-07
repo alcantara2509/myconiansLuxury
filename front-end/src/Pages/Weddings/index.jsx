@@ -1,9 +1,8 @@
 import React from 'react';
 import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import {
-  DarkSection, Footer, IntroWedding, WeddingContent,
+  DarkSectionEnjoy, Footer, IntroWedding, WeddingContent,
 } from '../../Components/Organisms';
-import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import { bannerWeddings } from '../../assets';
 
 const Weddings = () => (
@@ -18,7 +17,7 @@ const Weddings = () => (
     />
     <IntroWedding />
     <WeddingContent />
-    <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
+    <DarkSectionEnjoy />
     <Footer />
   </main>
 );

@@ -1,7 +1,6 @@
 import React from 'react';
 import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import { DarkSection, Footer, CovidContent } from '../../Components/Organisms';
-import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import bannerCovid from '../../assets/images/bannerCovid.jpg';
 
 const Events = () => (
@@ -15,7 +14,7 @@ const Events = () => (
       subTitle="Stay safe and enjoy a smooth holiday in the greek islands."
     />
     <CovidContent />
-    <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
+    <DarkSection />
     <Footer />
   </main>
 );

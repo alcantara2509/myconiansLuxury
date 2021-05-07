@@ -8,7 +8,6 @@ import {
 } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
-import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import bannerYachts from '../../assets/images/bannerYachts.jpg';
 import './style.css';
 import renderYachts from '../../Utils/renderYachts';
@@ -40,7 +39,7 @@ const Yachts = () => {
           {renderYachts(allYachts, setReload, reload)}
           <IslandCruises />
           <BespokeServices />
-          <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
+          <DarkSection />
           <Footer />
         </main>
       )

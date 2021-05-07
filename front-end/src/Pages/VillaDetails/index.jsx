@@ -13,7 +13,7 @@ import MLContext from '../../Context/MLContext';
 import Loading from '../../Components/Atoms/Loading';
 import { ExtraServices, MenuDesktop, MenuMobile } from '../../Components/Molecules';
 import {
-  DarkSection, Footer, VillaDetailsInfo, Features,
+  Footer, VillaDetailsInfo, Features, DarkSectionVilla,
 } from '../../Components/Organisms';
 import {
   checkHeart, heartClick, imgError, setLocalStorage,
@@ -24,7 +24,6 @@ import { iconArrowLeft, iconArrowRight } from '../../assets';
 import './style.css';
 import { Paragraph } from '../../Components/Atoms/Texts';
 import Colors from '../../Colors';
-import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 
 const VillaDetails = () => {
   const {
@@ -131,7 +130,7 @@ const VillaDetails = () => {
           <VillaDetailsInfo />
           {Carousel()}
           <Features title="property features" allVillas={allVillas} villaName={villaName} />
-          <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
+          <DarkSectionVilla />
           <ExtraServices />
           <Footer />
         </main>

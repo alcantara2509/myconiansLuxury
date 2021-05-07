@@ -8,7 +8,6 @@ import { ButtonSeeAll } from '../../Components/Atoms';
 import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
-import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import { setLocalStorage } from '../../Utils';
 import bannerVillas from '../../assets/images/bannerVillas.jpg';
 import './style.css';
@@ -37,7 +36,7 @@ const Villas = () => {
           <IntroVillas />
           {renderVillas(allVillas, seeAll, setReload, reload)}
           <ButtonSeeAll btnProps={{ allVillas, setSeeAll }} />
-          <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
+          <DarkSection />
           <Footer />
         </main>
       )

@@ -1,7 +1,6 @@
 import React from 'react';
 import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import { DarkSection, Footer, IntroServices } from '../../Components/Organisms';
-import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import { bannerServices } from '../../assets';
 
 const Services = () => (
@@ -16,7 +15,7 @@ const Services = () => (
       subTitle="Your personal concierge will be 24/7 at your disposal fulfilling your every wish!"
     />
     <IntroServices />
-    <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
+    <DarkSection />
     <Footer />
   </main>
 );

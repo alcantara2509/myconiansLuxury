@@ -6,6 +6,9 @@ import YachtHome from './YachtHome';
 import ConciergeHome from './ConciergeHome';
 import ServicesHome from './ServicesHome';
 import DarkSection from './DarkSection';
+import DarkSectionVilla from './DarkSectionVilla';
+import DarkSectionYacht from './DarkSectionYacht';
+import DarkSectionEnjoy from './DarkSectionEnjoy';
 import Footer from './Footer';
 import MenuContent from './MenuContent';
 import IntroVillas from './IntroVillas';
@@ -51,4 +54,7 @@ export {
   ConciergeHomeDesktop,
   Features,
   FeaturesYacht,
+  DarkSectionVilla,
+  DarkSectionYacht,
+  DarkSectionEnjoy,
 };

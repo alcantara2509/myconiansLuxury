@@ -9,7 +9,6 @@ import { DarkSection, Footer } from '../../Components/Organisms';
 import MLContext from '../../Context/MLContext';
 import { setLocalStorage } from '../../Utils';
 import renderEmpty from './empty';
-import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import wishCard from './wishCard';
 import wishCardYacht from './wishCardYacht';
 import './style.css';
@@ -62,7 +61,7 @@ const Wishlist = () => {
               See yacht charter
             </DarkButton>
           </section>
-          <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
+          <DarkSection />
           <Footer />
         </main>
       )

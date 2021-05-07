@@ -2,9 +2,8 @@ import React from 'react';
 import { DarkButton } from '../../Components/Atoms';
 import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import {
-  DarkSection, Footer, IntroParties, PartiesContent,
+  DarkSectionEnjoy, Footer, IntroParties, PartiesContent,
 } from '../../Components/Organisms';
-import { defaultText } from '../../Components/Organisms/DarkSection/texts';
 import { bannerYachtparties } from '../../assets';
 import './style.css';
 
@@ -23,7 +22,7 @@ const Parties = () => (
     <section className="dark-btn-parties">
       <DarkButton linkTo="yachts">see yacht charter</DarkButton>
     </section>
-    <DarkSection title={defaultText.title} paragraph={defaultText.paragraph} />
+    <DarkSectionEnjoy />
     <Footer />
   </main>
 );

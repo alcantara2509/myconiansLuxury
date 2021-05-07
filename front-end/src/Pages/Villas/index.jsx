@@ -10,6 +10,8 @@ import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
 import { setLocalStorage } from '../../Utils';
 import bannerVillas from '../../assets/images/bannerVillas.jpg';
+import languages from '../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const Villas = () => {
@@ -28,10 +30,10 @@ const Villas = () => {
           <MenuMobile />
           <MenuDesktop />
           <PagesBanner
-            title="luxury villas"
+            title={languages(english, portuguese, spanish).title}
             color="white"
             banner={bannerVillas}
-            subTitle="The finest private villas in Mykonos - for a memorable holiday."
+            subTitle={languages(english, portuguese, spanish).subTitle}
           />
           <IntroVillas />
           {renderVillas(allVillas, seeAll, setReload, reload)}

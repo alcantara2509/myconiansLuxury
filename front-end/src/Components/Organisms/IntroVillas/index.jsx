@@ -1,43 +1,32 @@
 import React from 'react';
 import { MainTitle, ItalicHighlight, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const IntroVillas = () => (
   <>
     <section className="intro-villas-container mobile">
       <MainTitle props={{ textColor: Colors.primaryColor }}>
-        handpicked villa
-        <br />
-        collection
+        {languages(english, portuguese, spanish).title}
       </MainTitle>
       <Paragraph props={{ textColor: Colors.primaryColor }}>
-        Enjoy our luxury holiday villas in Greece.
-        <br />
-        Luxury lifestyle & bespoke services, with 24/7
-        <br />
-        personal concierge.
+        {languages(english, portuguese, spanish).paragraph}
       </Paragraph>
       <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-        Explore just a small selection of our
-        <br />
-        luxury holiday villas collection below.
+        {languages(english, portuguese, spanish).subTitle}
       </ItalicHighlight>
     </section>
     <section className="intro-villas-container desktop">
       <MainTitle props={{ textColor: Colors.primaryColor }}>
-        handpicked villa
-        collection
+        {languages(english, portuguese, spanish).title}
       </MainTitle>
       <Paragraph props={{ textColor: Colors.primaryColor }}>
-        Enjoy our luxury holiday villas in Greece.
-        Luxury lifestyle & bespoke services, with 24/7
-        <br />
-        personal concierge.
+        {languages(english, portuguese, spanish).paragraph}
       </Paragraph>
       <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-        Explore just a small selection of our
-        luxury holiday villas collection below.
+        {languages(english, portuguese, spanish).subTitle}
       </ItalicHighlight>
     </section>
   </>

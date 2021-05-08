@@ -6,6 +6,8 @@ import { iconGuests, iconRooms, iconBaths } from '../../../assets';
 import { MainTitle } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
 import MLContext from '../../../Context/MLContext';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const VillaDetailsInfo = () => {
@@ -23,9 +25,27 @@ const VillaDetailsInfo = () => {
       {
         villaInfos ? (
           <section className="icons-card-details-desktop-container">
-            <IconsCardDetails iconsProps={{ icon: iconGuests, info: villaInfos.guests, type: 'guests' }} />
-            <IconsCardDetails iconsProps={{ icon: iconRooms, info: villaInfos.rooms, type: 'bedrooms' }} />
-            <IconsCardDetails iconsProps={{ icon: iconBaths, info: villaInfos.baths, type: 'bathrooms' }} />
+            <IconsCardDetails
+              iconsProps={{
+                icon: iconGuests,
+                info: villaInfos.guests,
+                type: languages(english, portuguese, spanish).type1,
+              }}
+            />
+            <IconsCardDetails
+              iconsProps={{
+                icon: iconRooms,
+                info: villaInfos.rooms,
+                type: languages(english, portuguese, spanish).type2,
+              }}
+            />
+            <IconsCardDetails
+              iconsProps={{
+                icon: iconBaths,
+                info: villaInfos.baths,
+                type: languages(english, portuguese, spanish).type3,
+              }}
+            />
           </section>
         ) : null
       }

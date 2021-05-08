@@ -10,8 +10,10 @@ import {
 import { imgError, heartClick, checkHeart } from '../../../Utils';
 import { ItalicHighlight, MainTitle } from '../../Atoms/Texts';
 import { IconsCard } from '../../Atoms';
-import './style.css';
 import Colors from '../../../Colors';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
+import './style.css';
 
 const VillaCards = ({ cardProps }) => {
   const {
@@ -43,7 +45,7 @@ const VillaCards = ({ cardProps }) => {
           <Link to={`/villas/${name}`}>
             <article className="villa-cards-p-btn">
               <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-                SEE VILLA
+                {languages(english, portuguese, spanish).button}
                 <img src={iconArrowRight} alt="icon arrow" className="findout-more-arrow" />
               </ItalicHighlight>
             </article>

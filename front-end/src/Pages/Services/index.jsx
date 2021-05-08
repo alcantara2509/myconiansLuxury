@@ -2,17 +2,19 @@ import React from 'react';
 import { MenuDesktop, MenuMobile, PagesBanner } from '../../Components/Molecules';
 import { DarkSection, Footer, IntroServices } from '../../Components/Organisms';
 import { bannerServices } from '../../assets';
+import languages from '../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 
 const Services = () => (
   <main className="villas-container">
     <MenuMobile />
     <MenuDesktop />
     <PagesBanner
-      title="24/7 services"
+      title={languages(english, portuguese, spanish).title}
       color="white"
       banner={bannerServices}
       id="srv"
-      subTitle="Your personal concierge will be 24/7 at your disposal fulfilling your every wish!"
+      subTitle={languages(english, portuguese, spanish).subTitle}
     />
     <IntroServices />
     <DarkSection />

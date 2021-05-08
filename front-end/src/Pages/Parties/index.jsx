@@ -5,6 +5,8 @@ import {
   DarkSectionEnjoy, Footer, IntroParties, PartiesContent,
 } from '../../Components/Organisms';
 import { bannerYachtparties } from '../../assets';
+import languages from '../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const Parties = () => (
@@ -12,10 +14,10 @@ const Parties = () => (
     <MenuMobile />
     <MenuDesktop />
     <PagesBanner
-      title="yacht parties"
+      title={languages(english, portuguese, spanish).title}
       color="white"
       banner={bannerYachtparties}
-      subTitle="Yacht parties are a must-have during your holidays in the greek islands."
+      subTitle={languages(english, portuguese, spanish).subTitle}
     />
     <IntroParties />
     <PartiesContent />

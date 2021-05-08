@@ -23,6 +23,8 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import { iconArrowLeft, iconArrowRight } from '../../assets';
 import './style.css';
 import { Paragraph } from '../../Components/Atoms/Texts';
+import languages from '../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import Colors from '../../Colors';
 
 const VillaDetails = () => {
@@ -129,7 +131,11 @@ const VillaDetails = () => {
           </section>
           <VillaDetailsInfo />
           {Carousel()}
-          <Features title="property features" allVillas={allVillas} villaName={villaName} />
+          <Features
+            title={languages(english, portuguese, spanish).title}
+            allVillas={allVillas}
+            villaName={villaName}
+          />
           <DarkSectionVilla />
           <ExtraServices />
           <Footer />

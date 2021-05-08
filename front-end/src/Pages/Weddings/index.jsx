@@ -4,16 +4,18 @@ import {
   DarkSectionEnjoy, Footer, IntroWedding, WeddingContent,
 } from '../../Components/Organisms';
 import { bannerWeddings } from '../../assets';
+import languages from '../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 
 const Weddings = () => (
   <main className="villas-container">
     <MenuMobile />
     <MenuDesktop />
     <PagesBanner
-      title="luxury weddings"
+      title={languages(english, portuguese, spanish).title}
       color="white"
       banner={bannerWeddings}
-      subTitle="Let us plan your wedding and create memories that will last a lifetime."
+      subTitle={languages(english, portuguese, spanish).subTitle}
     />
     <IntroWedding />
     <WeddingContent />

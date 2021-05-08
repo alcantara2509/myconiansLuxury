@@ -9,8 +9,10 @@ import {
 import Footer from '../../Components/Organisms/Footer';
 import { DarkSection, IntroVillas } from '../../Components/Organisms';
 import bannerYachts from '../../assets/images/bannerYachts.jpg';
-import './style.css';
 import renderYachts from '../../Utils/renderYachts';
+import languages from '../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
+import './style.css';
 
 const Yachts = () => {
   const { isFetching, allYachts } = useContext(MLContext);
@@ -30,10 +32,10 @@ const Yachts = () => {
           <MenuMobile />
           <MenuDesktop />
           <PagesBanner
-            title="luxury Yachts"
+            title={languages(english, portuguese, spanish).title}
             color="white"
             banner={bannerYachts}
-            subTitle="Making the best of the finest luxury tailor-made vacation, guaranteed."
+            subTitle={languages(english, portuguese, spanish).subTitle}
           />
           <IntroVillas />
           {renderYachts(allYachts, setReload, reload)}

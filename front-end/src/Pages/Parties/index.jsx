@@ -22,7 +22,9 @@ const Parties = () => (
     <IntroParties />
     <PartiesContent />
     <section className="dark-btn-parties">
-      <DarkButton linkTo="yachts">see yacht charter</DarkButton>
+      <DarkButton linkTo="yachts">
+        {languages(english, portuguese, spanish).button}
+      </DarkButton>
     </section>
     <DarkSectionEnjoy />
     <Footer />

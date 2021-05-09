@@ -37,4 +37,18 @@
     width: 500px !important;
     margin-bottom: 0 !important;
   }
+
+
+  .weddings-paragraph p {
+    text-align: left !important;
+  }
+  
+  .weddings-paragraph-rigth p {
+    margin-left: 84px;
+  }
+
+  .weddings-paragraph-left {
+    width: 310px;
+  }
+
 }

@@ -24,6 +24,8 @@ import { iconArrowLeft, iconArrowRight } from '../../assets';
 import './style.css';
 import { Paragraph } from '../../Components/Atoms/Texts';
 import Colors from '../../Colors';
+import languages from '../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 
 const VillaDetails = () => {
   const {
@@ -133,7 +135,11 @@ const VillaDetails = () => {
           </section>
           <YachtDetailsInfo />
           {Carousel()}
-          <FeaturesYacht title="yacht features" allYachts={allYachts} yachtName={yachtName} />
+          <FeaturesYacht
+            title={languages(english, portuguese, spanish).title}
+            allYachts={allYachts}
+            yachtName={yachtName}
+          />
           <DarkSectionYacht />
           <ExtraServices />
           <Footer />

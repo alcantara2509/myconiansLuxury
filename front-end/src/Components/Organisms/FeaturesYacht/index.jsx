@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import Colors from '../../../Colors';
 import { MainTitle, Paragraph, ServicesHomeTitle } from '../../Atoms/Texts';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const Features = ({ title, allYachts, yachtName }) => {
@@ -36,13 +38,13 @@ const Features = ({ title, allYachts, yachtName }) => {
       <section className="features-wrapper">
         <section className="specs-container">
           <ServicesHomeTitle props={{ textColor: Colors.primaryColor }}>
-            specifications
+            {languages(english, portuguese, spanish).title1}
           </ServicesHomeTitle>
           {renderSpecs()}
         </section>
         <section className="amenities-container">
           <ServicesHomeTitle props={{ textColor: Colors.primaryColor }}>
-            amenities
+            {languages(english, portuguese, spanish).title2}
           </ServicesHomeTitle>
           {renderAmenities()}
         </section>

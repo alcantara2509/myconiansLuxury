@@ -6,82 +6,48 @@ import { ServicesTypes } from '../../Molecules';
 import {
   pictureConcierge, pictureFood, pictureTransfer, pictureSecurity, pictureAesthetic,
 } from '../../../assets';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const IntroServices = () => (
   <section className="intro-services-container">
-    <section className="intro-services-content-resp mobile">
+    <section className="intro-services-content-resp">
       <MainTitle props={{ textColor: Colors.primaryColor }}>
-        experience another
-        <br />
-        level
+        {languages(english, portuguese, spanish).title}
       </MainTitle>
       <Paragraph props={{ textColor: Colors.primaryColor }}>
-        Our travel experts and lifestyle managers
-        <br />
-        have a selection of the finest villas, yachts,
-        <br />
-        restaurants, clubs, spas, tailor-made activities,
-        <br />
-        luxury products, bespoke events, and
-        <br />
-        experiences. We strive to offer an
-        <br />
-        unparalleled level of service tailored to each
-        <br />
-        of our guests.
+        {languages(english, portuguese, spanish).paragraph}
       </Paragraph>
       <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-        Luxury holidays are not about price.
-        <br />
-        It&apos;s about quality.
-      </ItalicHighlight>
-    </section>
-    <section className="intro-services-content-resp desktop">
-      <MainTitle props={{ textColor: Colors.primaryColor }}>
-        experience another level
-      </MainTitle>
-      <Paragraph props={{ textColor: Colors.primaryColor }}>
-        Our travel experts and lifestyle managers
-        have a selection of the finest villas, yachts,
-        <br />
-        restaurants, clubs, spas, tailor-made activities,
-        luxury products, bespoke events, and
-        <br />
-        experiences. We strive to offer an
-        unparalleled level of service tailored to each
-        <br />
-        of our guests.
-      </Paragraph>
-      <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-        Luxury holidays are not about price. It&apos;s about quality.
+        {languages(english, portuguese, spanish).subTitle}
       </ItalicHighlight>
     </section>
     <section className="intro-services-types-container">
       <ServicesTypes
         image={pictureConcierge}
-        title="concierge"
-        paragraph="VIP Bookings & Reservations 24/7 Errand Support"
+        title={languages(english, portuguese, spanish).servicesTitle1}
+        paragraph={languages(english, portuguese, spanish).servicesParagraph1}
       />
       <ServicesTypes
         image={pictureFood}
-        title="food & bar services"
-        paragraph="Private chef | Bartender | Butler | Waiter"
+        title={languages(english, portuguese, spanish).servicesTitle2}
+        paragraph={languages(english, portuguese, spanish).servicesParagraph2}
       />
       <ServicesTypes
         image={pictureTransfer}
-        title="vip transfer"
-        paragraph="Private driver | Luxury cars | Jets | Helicopters"
+        title={languages(english, portuguese, spanish).servicesTitle3}
+        paragraph={languages(english, portuguese, spanish).servicesParagraph3}
       />
       <ServicesTypes
         image={pictureSecurity}
-        title="vip security"
-        paragraph="Static & Close Protection | K9 Dogs  Money Shipments | Security Systems"
+        title={languages(english, portuguese, spanish).servicesTitle4}
+        paragraph={languages(english, portuguese, spanish).servicesParagraph4}
       />
       <ServicesTypes
         image={pictureAesthetic}
-        title="aesthetic services"
-        paragraph="Hair Stylist | Nails Specialist | Massage Personal Trainer | Yoga Teacher"
+        title={languages(english, portuguese, spanish).servicesTitle5}
+        paragraph={languages(english, portuguese, spanish).servicesParagraph5}
       />
     </section>
   </section>

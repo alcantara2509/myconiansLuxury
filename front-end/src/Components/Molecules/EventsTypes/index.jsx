@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { ServicesHomeTitle, Paragraph, ItalicHighlight } from '../../Atoms/Texts';
 import { iconArrowRight } from '../../../assets';
 import Colors from '../../../Colors';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const EventsTypes = ({
@@ -21,7 +23,7 @@ const EventsTypes = ({
     </section>
     <Link to={link} className="find-out-more">
       <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-        Find Out more
+        {languages(english, portuguese, spanish).link}
         <img src={iconArrowRight} alt="icon arrow" className="findout-more-arrow" />
       </ItalicHighlight>
     </Link>

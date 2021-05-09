@@ -29,9 +29,11 @@ const MenuMobile = () => {
   };
 
   const handleClickLanguage = ({ target: { value } }) => {
-    localStorage.setItem('language', JSON.stringify(value));
-    setSelectedLanguage(value);
-    window.location.reload();
+    if (value) {
+      localStorage.setItem('language', JSON.stringify(value));
+      setSelectedLanguage(value);
+      window.location.reload();
+    }
   };
 
   const setLanguage = () => (

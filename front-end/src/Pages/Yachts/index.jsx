@@ -7,7 +7,7 @@ import {
   IslandCruises, MenuDesktop, MenuMobile, PagesBanner, BespokeServices,
 } from '../../Components/Molecules';
 import Footer from '../../Components/Organisms/Footer';
-import { DarkSection, IntroVillas } from '../../Components/Organisms';
+import { DarkSection, IntroYachts } from '../../Components/Organisms';
 import bannerYachts from '../../assets/images/bannerYachts.jpg';
 import renderYachts from '../../Utils/renderYachts';
 import languages from '../../Utils/languages';
@@ -37,7 +37,7 @@ const Yachts = () => {
             banner={bannerYachts}
             subTitle={languages(english, portuguese, spanish).subTitle}
           />
-          <IntroVillas />
+          <IntroYachts />
           {renderYachts(allYachts, setReload, reload)}
           <IslandCruises />
           <BespokeServices />

@@ -12,6 +12,7 @@ import DarkSectionEnjoy from './DarkSectionEnjoy';
 import Footer from './Footer';
 import MenuContent from './MenuContent';
 import IntroVillas from './IntroVillas';
+import IntroYachts from './IntroYachts';
 import IntroServices from './IntroServices';
 import IntroEvents from './IntroEvents';
 import IntroWedding from './IntroWedding';
@@ -57,4 +58,5 @@ export {
   DarkSectionVilla,
   DarkSectionYacht,
   DarkSectionEnjoy,
+  IntroYachts,
 };

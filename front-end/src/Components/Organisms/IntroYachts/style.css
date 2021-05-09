@@ -1,0 +1,6 @@
+.intro-villas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 30px;
+}

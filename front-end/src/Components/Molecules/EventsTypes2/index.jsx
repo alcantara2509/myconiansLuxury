@@ -1,17 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { ServicesHomeTitle, Paragraph, ItalicHighlight } from '../../Atoms/Texts';
-import { iconArrowRight } from '../../../assets';
+import { ServicesHomeTitle, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
-import languages from '../../../Utils/languages';
-import { english, portuguese, spanish } from './languages';
-import './style.css';
 
 const EventsTypes = ({
-  image, title, paragraph, link, side, reverse,
+  image, title, paragraph, side,
 }) => (
-  <section className={`event-planning-container ${reverse}`}>
+  <section className="event-planning-container">
     <img src={image} alt={title} className="image-size-type-events mobile" />
     <div
       className="image-size-type-events desktop"
@@ -27,12 +22,6 @@ const EventsTypes = ({
           {paragraph}
         </Paragraph>
       </section>
-      <Link to={link} className="find-out-more">
-        <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-          {languages(english, portuguese, spanish).link}
-          <img src={iconArrowRight} alt="icon arrow" className="findout-more-arrow" />
-        </ItalicHighlight>
-      </Link>
     </section>
   </section>
 );

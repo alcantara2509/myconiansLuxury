@@ -2,7 +2,7 @@
 import React from 'react';
 import { MainTitle, ItalicHighlight, Paragraph } from '../../Atoms/Texts';
 import Colors from '../../../Colors';
-import { ServicesTypes, EventsTypes } from '../../Molecules';
+import { EventsTypes, EventsTypes2 } from '../../Molecules';
 import {
   bannerWeddings, bannerYachtparties, pictureEvents,
 } from '../../../assets';
@@ -29,17 +29,20 @@ const IntroEvents = () => (
       title={languages(english, portuguese, spanish).servicesTitle1}
       paragraph={languages(english, portuguese, spanish).servicesParagraph1}
       link="weddings"
+      side="left"
     />
     <EventsTypes
       image={bannerYachtparties}
       title={languages(english, portuguese, spanish).servicesTitle2}
       paragraph={languages(english, portuguese, spanish).servicesParagraph2}
       link="parties"
+      reverse="reverse"
     />
-    <ServicesTypes
+    <EventsTypes2
       image={pictureEvents}
       title={languages(english, portuguese, spanish).servicesTitle3}
       paragraph={languages(english, portuguese, spanish).servicesParagraph3}
+      side="left"
     />
   </section>
 );

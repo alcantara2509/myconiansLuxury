@@ -20,15 +20,6 @@
   width: 220px;
 }
 
-select {
-  border: none;
-  font-family: 'Lato', sans-serif;
-  text-transform: uppercase;
-  color: #1C3C45;
-  margin: 10px 0;
-  font-size: 16px;
-}
-
 option {
   /* background-color: violet; */
   border: none;

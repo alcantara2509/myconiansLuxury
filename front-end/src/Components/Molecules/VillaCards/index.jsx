@@ -42,14 +42,14 @@ const VillaCards = ({ cardProps }) => {
             <IconsCard iconsProps={{ icon: iconRooms, info: rooms }} />
             <IconsCard iconsProps={{ icon: iconBaths, info: baths }} />
           </section>
-          <Link to={`/villas/${name}`}>
+          <div>
             <article className="villa-cards-p-btn">
               <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
                 {languages(english, portuguese, spanish).button}
                 <img src={iconArrowRight} alt="icon arrow" className="findout-more-arrow" />
               </ItalicHighlight>
             </article>
-          </Link>
+          </div>
         </section>
       </Link>
     </section>

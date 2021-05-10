@@ -8,6 +8,8 @@ import Popup from 'reactjs-popup';
 // import { checkHeart, heartClick } from '../../../Utils';
 import { EnquireButton } from '../../Atoms';
 // import { Paragraph, ServicesHomeTitle } from '../../Atoms/Texts';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const Form = () =>
@@ -26,29 +28,45 @@ const Form = () =>
               &times;
             </button>
             <form action="">
-              <label htmlFor="name">Name:*</label>
+              <label htmlFor="name">
+                {languages(english, portuguese, spanish).name}
+              </label>
               <input required type="text" id="name" name="name" />
-              <label htmlFor="phone">Phone:</label>
+              <label htmlFor="phone">{languages(english, portuguese, spanish).phone}</label>
               <input type="text" id="phone" name="phone" />
-              <label htmlFor="email">Email:*</label>
+              <label htmlFor="email">{languages(english, portuguese, spanish).email}</label>
               <input required type="email" id="email" name="email" />
               <section className="checkIO">
                 <section className="checks">
-                  <label htmlFor="check-in">Check-in:*</label>
-                  <input required className="input-mid" type="date" id="check-in" name="check-in" />
+                  <label htmlFor="check-in">{languages(english, portuguese, spanish).checkIn}</label>
+                  <input
+                    required
+                    className="input-mid"
+                    type="date"
+                    id="check-in"
+                    name="check-in"
+                  />
                 </section>
                 <section className="checks">
-                  <label htmlFor="check-out">Check-out:*</label>
-                  <input required className="input-mid" type="date" id="check-out" name="check-out" />
+                  <label htmlFor="check-out">{languages(english, portuguese, spanish).checkOut}</label>
+                  <input
+                    required
+                    className="input-mid"
+                    type="date"
+                    id="check-out"
+                    name="check-out"
+                  />
                 </section>
               </section>
               <section className="checkIO">
                 <section className="checks">
-                  <label required htmlFor="guests">Guests:*</label>
-                  <input className="input-mid" type="number" id="guests" name="guests" />
+                  <label required htmlFor="guests">
+                    {languages(english, portuguese, spanish).guests}
+                  </label>
+                  <input className="input-mid" type="number" id="guests" name="guests" min="1" />
                 </section>
                 <section className="checks">
-                  <label htmlFor="price">Check-out:*</label>
+                  <label htmlFor="price">{languages(english, portuguese, spanish).daily}</label>
                   <select className="input-mid" name="price" id="price">
                     <option value="select">- select -</option>
                     <option value="1000">0 - 1000 €</option>
@@ -59,8 +77,20 @@ const Form = () =>
                   </select>
                 </section>
               </section>
-              <label htmlFor="notes">Notes, Concierge Services:</label>
+              <label htmlFor="notes">{languages(english, portuguese, spanish).notes}</label>
               <textarea name="notes" id="notes" cols="30" rows="4" style={{ outline: 0 }} />
+              <section className="sec-send-btn">
+                <button
+                  type="submit"
+                  className="send-btn"
+                  onClick={() => {
+                    // eslint-disable-next-line no-alert
+                    alert('enviado com sucesso!');
+                  }}
+                >
+                  {languages(english, portuguese, spanish).button}
+                </button>
+              </section>
             </form>
             {/* {
               favoriteVillas
@@ -96,9 +126,6 @@ const Form = () =>
                 )
                 : null
               } */}
-            <section className="sec-send-btn">
-              <button type="button" className="send-btn">send</button>
-            </section>
           </section>
         </section>
       )}

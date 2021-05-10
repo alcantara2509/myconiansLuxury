@@ -27,12 +27,15 @@ input {
   height: 24px;
   border-radius: 2px;
   border: .5px solid #1C3C45;
+  width: 100%;
 }
 
 select {
+  width: 144px !important;
+  padding-right: 14px;
   background: none;
   color: #1C3C45;
-  height: 26px;
+  height: 25px;
   border-radius: 2px;
   border: .5px solid #1C3C45;
   outline: 0;
@@ -63,8 +66,11 @@ label {
 }
 
 .input-mid {
-  width: 90%;
+  border: .5px solid #1C3C45;
+  width: 137px;
+  margin-left: 4px;
   padding-left: 5px;
+  background-color: white;
 }
 
 input::placeholder {
@@ -107,4 +113,19 @@ input::placeholder {
   margin: 20px 0;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 800px) {
+  .modal {
+    width: 600px;
+  }
+
+  .input-mid {
+    width: 256px;
+    margin: 0 5px;
+  }
+
+  select {
+    width: 264px !important;
+  }
 }

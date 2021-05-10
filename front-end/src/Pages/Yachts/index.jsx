@@ -18,8 +18,6 @@ const Yachts = () => {
   const { isFetching, allYachts } = useContext(MLContext);
   const [reload, setReload] = useState('');
 
-  console.log(allYachts);
-
   useEffect(() => {
     const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
     if (!favoriteVillas) localStorage.setItem('favoriteVillas', JSON.stringify([]));

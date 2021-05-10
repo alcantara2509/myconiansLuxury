@@ -11,6 +11,8 @@ import { setLocalStorage } from '../../Utils';
 import renderEmpty from './empty';
 import wishCard from './wishCard';
 import wishCardYacht from './wishCardYacht';
+import languages from '../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const Wishlist = () => {
@@ -28,8 +30,6 @@ const Wishlist = () => {
   const listYachts = allYachts.filter((yacht) => favoriteVillas
     .find((e) => e.includes(yacht.yachts_name)));
 
-  console.log(listYachts);
-
   return (
     isFetching ? <Loading type="bubbles" color="black" />
       : (
@@ -38,7 +38,7 @@ const Wishlist = () => {
           <MenuDesktop />
           <section className="wish-title">
             <MainTitle props={{ textColor: Colors.primaryColor }}>
-              My Wishlist
+              {languages(english, portuguese, spanish).title}
             </MainTitle>
           </section>
           <section className="wish-cards-container">
@@ -55,10 +55,10 @@ const Wishlist = () => {
           </section>
           <section className="wish-buttons">
             <DarkButton linkTo="/villas">
-              See all villas
+              {languages(english, portuguese, spanish).button1}
             </DarkButton>
             <DarkButton linkTo="/yachts">
-              See yacht charter
+              {languages(english, portuguese, spanish).button2}
             </DarkButton>
           </section>
           <DarkSection />

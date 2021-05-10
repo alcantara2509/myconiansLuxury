@@ -1,91 +1,47 @@
 import React from 'react';
 import Colors from '../../../Colors';
 import { MainTitle, Paragraph, ItalicHighlight } from '../../Atoms/Texts';
+import languages from '../../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 import './style.css';
 
 const CovidContent = () => (
   <main className="covid-content-container">
-    <section className="intro-services-content-resp mobile">
-
+    <section className="intro-services-content-resp">
       <MainTitle props={{ textColor: Colors.primaryColor }}>
-        enjoy your holidays
-        <br />
-        without worries
+        {languages(english, portuguese, spanish).title}
       </MainTitle>
       <Paragraph props={{ textColor: Colors.primaryColor }}>
-        We are prepared to offer you a safe stay in
-        <br />
-        Mykonos, following the Covid-19 measures.
+        {languages(english, portuguese, spanish).paragraph1}
         <br />
         <br />
-        Our sanitizing policies are reenforced and our
-        <br />
-        staff is taking every precaution to keep our
-        <br />
-        guests comfortable and healthy. We ensure
-        <br />
-        you will travel with luxury and style, having
-        <br />
-        the peace of mind that your safety is our top
-        <br />
-        priority.
+        {languages(english, portuguese, spanish).paragraph2}
         <br />
         <br />
         <br />
         <br />
       </Paragraph>
       <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-        Please follow the instructions from our
-        <br />
-        staff and enjoy yourself!
-      </ItalicHighlight>
-    </section>
-    <section className="intro-services-content-resp desktop">
-
-      <MainTitle props={{ textColor: Colors.primaryColor }}>
-        enjoy your holidays without worries
-      </MainTitle>
-      <Paragraph props={{ textColor: Colors.primaryColor }}>
-        We are prepared to offer you a safe stay in
-        Mykonos, following the Covid-19 measures.
-        <br />
-        <br />
-        Our sanitizing policies are reenforced and our
-        staff is taking every precaution to keep our
-        <br />
-        guests comfortable and healthy. We ensure
-        you will travel with luxury and style, having
-        <br />
-        the peace of mind that your safety is our top priority.
-        <br />
-        <br />
-        <br />
-        <br />
-      </Paragraph>
-      <ItalicHighlight props={{ textColor: Colors.primaryColor }}>
-        Please follow the instructions from our
-        staff and enjoy yourself!
+        {languages(english, portuguese, spanish).subTitle}
       </ItalicHighlight>
     </section>
     <Paragraph props={{ textColor: Colors.primaryColor }}>
-      Please wear a mask
+      {languages(english, portuguese, spanish).measure1}
       <br />
       <br />
-      Respect sneeze & cough etiquette
+      {languages(english, portuguese, spanish).measure2}
       <br />
       <br />
-      Keep social distance
+      {languages(english, portuguese, spanish).measure3}
       <br />
       <br />
-      Stay at home if you are not feeling well
+      {languages(english, portuguese, spanish).measure4}
       <br />
       <br />
-      Wash your hand thoroughly and
-      <br />
-      use disinfectant provided
+      {languages(english, portuguese, spanish).measure5}
       <br />
       <br />
-      Avoid close bodily contact
+      {languages(english, portuguese, spanish).measure6}
     </Paragraph>
   </main>
 );

@@ -72,7 +72,7 @@
   
   .image-size-details {
     height: 70vh;
-    width: 900px;
+    width: 100%;
   }
   
 }
@@ -80,6 +80,6 @@
 @media only screen and (min-width: 1500px) {
   .alice-carousel {
     overflow: hidden;
-    width: 47.5vw;
+    width: 60vw;
   }
 }

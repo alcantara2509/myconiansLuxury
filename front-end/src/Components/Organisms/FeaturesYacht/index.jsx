@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 import Colors from '../../../Colors';
@@ -24,12 +25,12 @@ const Features = ({ title, allYachts, yachtName }) => {
     getInfo();
   }, [allYachts]);
 
-  const renderSpecs = () => specs.map((spec) => (
-    <Paragraph props={{ textColor: Colors.primaryColor }}>{spec}</Paragraph>
+  const renderSpecs = () => specs.map((spec, id) => (
+    <Paragraph key={id} props={{ textColor: Colors.primaryColor }}>{spec}</Paragraph>
   ));
 
-  const renderAmenities = () => amenities.map((amenitie) => (
-    <Paragraph props={{ textColor: Colors.primaryColor }}>{amenitie}</Paragraph>
+  const renderAmenities = () => amenities.map((amenitie, id) => (
+    <Paragraph key={id} props={{ textColor: Colors.primaryColor }}>{amenitie}</Paragraph>
   ));
 
   return (

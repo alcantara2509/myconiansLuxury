@@ -52,8 +52,8 @@ const VillaDetails = () => {
   }, [yachtName]);
 
   useEffect(() => {
-    const getCover = () => {
-      const cvr = allImages.find((e) => e.url.includes('Cover'));
+    const getCover = async () => {
+      const cvr = await allImages.find((e) => e.url.includes('Cover'));
       if (cvr) {
         setCover(cvr);
       }

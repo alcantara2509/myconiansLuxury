@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { iconArrowRight } from '../../assets';
 import Colors from '../../Colors';
 import { ServicesHomeTitle, Paragraph } from '../../Components/Atoms/Texts';
 import { checkHeart, heartClick } from '../../Utils';
 import imgError from '../../Utils/imgError';
+import languages from '../../Utils/languages';
+import { english, portuguese, spanish } from './languages';
 
 const wishCard = (listYachts, reload, setReload) => (
   listYachts.map((e) => (
@@ -29,7 +32,8 @@ const wishCard = (listYachts, reload, setReload) => (
           <section className="wish-link-content">
             <Link to={`/villas/${e.yachts_name}`}>
               <Paragraph props={{ textColor: Colors.primaryColor }}>
-                see Villa
+                {languages(english, portuguese, spanish).seeYacht}
+                <img src={iconArrowRight} alt="icon arrow" className="findout-more-arrow" />
               </Paragraph>
             </Link>
           </section>
@@ -59,7 +63,8 @@ const wishCard = (listYachts, reload, setReload) => (
           <section className="wish-link-content">
             <Link to={`/villas/${e.yachts_name}`}>
               <Paragraph props={{ textColor: Colors.primaryColor }}>
-                see Villa
+                {languages(english, portuguese, spanish).seeYacht}
+                <img src={iconArrowRight} alt="icon arrow" className="findout-more-arrow" />
               </Paragraph>
             </Link>
           </section>

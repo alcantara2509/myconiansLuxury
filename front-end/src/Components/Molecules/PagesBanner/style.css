@@ -13,6 +13,7 @@
 
 .banner-info {
   margin-bottom: 90px;
+  width: 290px;
 }
 
 .banner-sub-container {
@@ -29,6 +30,7 @@
 
   .banner-info {
     margin-top: 7.5%;
+    width: max-content;
   }
 
   #srv {

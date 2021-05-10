@@ -4,6 +4,7 @@ import iconBaths from './icons/iconBaths.svg';
 import iconCrew from './icons/iconCrew.svg';
 import iconFavs from './icons/iconFavs.svg';
 import iconFillFavs from './icons/iconFillFavs.svg';
+import iconEmptyFavs from './icons/iconEmptyFavs.svg';
 import replaceImage from './images/replaceImage.jpeg';
 import iconLogo from './icons/iconLogo.svg';
 import iconLinkedIn from './icons/iconLinkedIn.svg';
@@ -50,6 +51,7 @@ export {
   iconFavs,
   replaceImage,
   iconFillFavs,
+  iconEmptyFavs,
   logoSecondary,
   iconLogo,
   bannerHome,

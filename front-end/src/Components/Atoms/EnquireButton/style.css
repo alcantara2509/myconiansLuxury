@@ -11,3 +11,7 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.enquire-button:hover {
+  background-color: #F4F0E9;
+}

@@ -4,18 +4,15 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import Popup from 'reactjs-popup';
-// import Colors from '../../../Colors';
-// import { checkHeart, heartClick } from '../../../Utils';
 import { EnquireButton } from '../../Atoms';
-// import { Paragraph, ServicesHomeTitle } from '../../Atoms/Texts';
 import languages from '../../../Utils/languages';
 import { english, portuguese, spanish } from './languages';
 import './style.css';
 
-const Form = () =>
-  // const [reload, setReload] = useState('');
-  // const favoriteVillas = JSON.parse(localStorage.getItem('favoriteVillas'));
-  (
+const Form = () => {
+  const wishlist = JSON.parse(localStorage.getItem('favoriteVillas'));
+  console.log(wishlist);
+  return (
     <Popup
       trigger={EnquireButton}
       modal
@@ -84,52 +81,18 @@ const Form = () =>
                   type="submit"
                   className="send-btn"
                   onClick={() => {
-                    // eslint-disable-next-line no-alert
-                    alert('enviado com sucesso!');
+                    console.log('ok');
                   }}
                 >
                   {languages(english, portuguese, spanish).button}
                 </button>
               </section>
             </form>
-            {/* {
-              favoriteVillas
-                ? (
-                  <section className="favs-container">
-                    <Paragraph props={{ textColor: Colors.primaryColor }}>
-                      My Wishlist:
-                    </Paragraph>
-                    {
-                favoriteVillas.map((e) => (
-                  <section className="favVilla">
-                    <section className="sec-villa-name">
-                      <ServicesHomeTitle props={{ textColor: Colors.primaryColor }}>
-                        Villa
-                        {' '}
-                        {' '}
-                        {e}
-                      </ServicesHomeTitle>
-                    </section>
-                    <section className="sec-fav-btn">
-                      <button
-                        className="fav-button"
-                        type="button"
-                        onClick={() => heartClick(e.villas_name, reload, setReload)}
-                      >
-                        {checkHeart(e.villas_name)}
-                      </button>
-                    </section>
-                  </section>
-                ))
-              }
-                  </section>
-                )
-                : null
-              } */}
           </section>
         </section>
       )}
     </Popup>
 
   );
+};
 export default Form;

@@ -19,7 +19,7 @@ export const portuguese = {
   service4: 'Aluguel de E-Foil',
   service5: 'Aluguel de Jet Ski e Seabob',
   service6: 'Cruzeiros pelas ilhas próximas',
-  service7: 'E muito mais!!',
+  service7: 'E muito mais!',
 };
 
 export const spanish = {

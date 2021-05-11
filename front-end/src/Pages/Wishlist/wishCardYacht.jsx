@@ -54,14 +54,11 @@ const wishCard = (listYachts, reload, setReload) => (
           <img src={e.cover} alt={e.yachts_name} onError={imgError} className="wish-img" />
           <section className="wish-title-content">
             <ServicesHomeTitle props={{ textColor: Colors.primaryColor }}>
-              Villa
-              {' '}
-              {' '}
               {e.yachts_name}
             </ServicesHomeTitle>
           </section>
           <section className="wish-link-content">
-            <Link to={`/villas/${e.yachts_name}`}>
+            <Link to={`/yachts/${e.yachts_name}`}>
               <Paragraph props={{ textColor: Colors.primaryColor }}>
                 {languages(english, portuguese, spanish).seeYacht}
                 <img src={iconArrowRight} alt="icon arrow" className="findout-more-arrow" />

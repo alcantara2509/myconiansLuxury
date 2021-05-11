@@ -18,7 +18,7 @@ const Footer = () => (
         <h3 className="footer-subtitle">Contact</h3>
         <p className="footer-p">Phone: +30.690.707.4177</p>
         <p className="footer-p">WhatsApp: +30.690.707.4177</p>
-        <p className="footer-p">E-mail: villas@luxuryholidaysgreece.com</p>
+        <p className="footer-p">E-mail: myconianluxury@gmail.com</p>
       </section>
       <section className="social-container">
         <h3 className="footer-subtitle">Social</h3>

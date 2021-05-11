@@ -115,6 +115,10 @@ input::placeholder {
   text-transform: uppercase;
 }
 
+.send-btn:hover {
+  background-color: #F4F0E9;
+} 
+
 @media only screen and (min-width: 800px) {
   .modal {
     width: 600px;

@@ -13,3 +13,7 @@
   justify-content: center;
   align-items: center;
 }
+
+.dark-button:hover {
+  background-color: #5D6D6A;
+}

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable no-undef */
@@ -76,6 +77,13 @@ const Form = () => {
               </section>
               <label htmlFor="notes">{languages(english, portuguese, spanish).notes}</label>
               <textarea name="notes" id="notes" cols="30" rows="4" style={{ outline: 0 }} />
+              {/* <section className="wishlist-form">
+                {
+                  wishlist ? wishlist.map((e, id) => (
+                    <p key={id}>{e}</p>
+                  )) : null
+                }
+              </section> */}
               <section className="sec-send-btn">
                 <button
                   type="submit"

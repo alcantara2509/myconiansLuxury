@@ -10,10 +10,9 @@ import languages from '../../../Utils/languages';
 import { english, portuguese, spanish } from './languages';
 import './style.css';
 
-const Form = () => {
-  const wishlist = JSON.parse(localStorage.getItem('favoriteVillas'));
-  console.log(wishlist);
-  return (
+// const wishlist = JSON.parse(localStorage.getItem('favoriteVillas'));
+const Form = () =>
+  (
     <Popup
       trigger={EnquireButton}
       modal
@@ -102,5 +101,4 @@ const Form = () => {
     </Popup>
 
   );
-};
 export default Form;

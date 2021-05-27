@@ -3,16 +3,38 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable no-undef */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, { useState } from 'react';
 import Popup from 'reactjs-popup';
 import { EnquireButton } from '../../Atoms';
 import languages from '../../../Utils/languages';
 import { english, portuguese, spanish } from './languages';
 import './style.css';
+import postForm from '../../../Services/postForm';
 
-// const wishlist = JSON.parse(localStorage.getItem('favoriteVillas'));
-const Form = () =>
-  (
+const Form = () => {
+  const wishlist = JSON.parse(localStorage.getItem('favoriteVillas'));
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [checkIn, setCheckIn] = useState('');
+  const [checkOut, setCheckOut] = useState('');
+  const [guests, setGuests] = useState('');
+  const [price, setPrice] = useState('');
+  const [text, setText] = useState('');
+
+  const data = {
+    name,
+    phone,
+    email,
+    checkIn,
+    checkOut,
+    guests,
+    price,
+    text,
+    wishlist,
+  };
+
+  return (
     <Popup
       trigger={EnquireButton}
       modal
@@ -28,11 +50,11 @@ const Form = () =>
               <label htmlFor="name">
                 {languages(english, portuguese, spanish).name}
               </label>
-              <input required type="text" id="name" name="name" />
+              <input required type="text" id="name" name="name" onChange={({ target }) => setName(target.value)} />
               <label htmlFor="phone">{languages(english, portuguese, spanish).phone}</label>
-              <input type="text" id="phone" name="phone" />
+              <input type="text" id="phone" name="phone" onChange={({ target }) => setPhone(target.value)} />
               <label htmlFor="email">{languages(english, portuguese, spanish).email}</label>
-              <input required type="email" id="email" name="email" />
+              <input required type="email" id="email" name="email" onChange={({ target }) => setEmail(target.value)} />
               <section className="checkIO">
                 <section className="checks">
                   <label htmlFor="check-in">{languages(english, portuguese, spanish).checkIn}</label>
@@ -42,6 +64,7 @@ const Form = () =>
                     type="date"
                     id="check-in"
                     name="check-in"
+                    onChange={({ target }) => setCheckIn(target.value)}
                   />
                 </section>
                 <section className="checks">
@@ -52,6 +75,7 @@ const Form = () =>
                     type="date"
                     id="check-out"
                     name="check-out"
+                    onChange={({ target }) => setCheckOut(target.value)}
                   />
                 </section>
               </section>
@@ -60,11 +84,23 @@ const Form = () =>
                   <label required htmlFor="guests">
                     {languages(english, portuguese, spanish).guests}
                   </label>
-                  <input className="input-mid" type="number" id="guests" name="guests" min="1" />
+                  <input
+                    className="input-mid"
+                    type="number"
+                    id="guests"
+                    name="guests"
+                    min="1"
+                    onChange={({ target }) => setGuests(target.value)}
+                  />
                 </section>
                 <section className="checks">
                   <label htmlFor="price">{languages(english, portuguese, spanish).daily}</label>
-                  <select className="input-mid" name="price" id="price">
+                  <select
+                    className="input-mid"
+                    name="price"
+                    id="price"
+                    onChange={({ target }) => setPrice(target.value)}
+                  >
                     <option value="select">- select -</option>
                     <option value="1000">0 - 1000 €</option>
                     <option value="3000">1000 - 3000 €</option>
@@ -75,21 +111,19 @@ const Form = () =>
                 </section>
               </section>
               <label htmlFor="notes">{languages(english, portuguese, spanish).notes}</label>
-              <textarea name="notes" id="notes" cols="30" rows="4" style={{ outline: 0 }} />
-              {/* <section className="wishlist-form">
-                {
-                  wishlist ? wishlist.map((e, id) => (
-                    <p key={id}>{e}</p>
-                  )) : null
-                }
-              </section> */}
+              <textarea
+                name="notes"
+                id="notes"
+                cols="30"
+                rows="4"
+                style={{ outline: 0 }}
+                onChange={({ target }) => setText(target.value)}
+              />
               <section className="sec-send-btn">
                 <button
                   type="submit"
                   className="send-btn"
-                  onClick={() => {
-                    console.log('ok');
-                  }}
+                  onClick={() => { postForm(data); }}
                 >
                   {languages(english, portuguese, spanish).button}
                 </button>
@@ -99,6 +133,7 @@ const Form = () =>
         </section>
       )}
     </Popup>
-
   );
+};
+
 export default Form;

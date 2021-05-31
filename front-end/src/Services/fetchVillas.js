@@ -1,5 +1,5 @@
 /* eslint-disable consistent-return */
-const baseURL = 'http://18.228.59.63:3001/villas/';
+const baseURL = 'https://api.myconianluxury.com/villas/';
 
 export const fetchVillas = async () => {
   const apiRequest = await fetch(baseURL);

@@ -123,7 +123,12 @@ const Form = () => {
                 <button
                   type="submit"
                   className="send-btn"
-                  onClick={() => { postForm(data); }}
+                  onClick={() => {
+                    if (name && phone && email && checkIn && checkOut && guests) {
+                      postForm(data);
+                      alert('Success!');
+                    }
+                  }}
                 >
                   {languages(english, portuguese, spanish).button}
                 </button>

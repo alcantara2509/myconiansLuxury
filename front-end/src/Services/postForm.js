@@ -1,4 +1,4 @@
-const baseURL = 'http://18.228.59.63:3001/form/';
+const baseURL = 'https://api.myconianluxury.com/form/';
 
 const postForm = async (data) => {
   const postMethod = {

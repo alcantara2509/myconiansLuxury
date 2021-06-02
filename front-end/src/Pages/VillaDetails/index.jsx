@@ -91,6 +91,7 @@ const VillaDetails = () => {
       infinite
       activeIndex={activeIndex}
       onSlideChanged={onSlideChange}
+      autoHeight
     />,
     <section className="carousel-control-btns">
       <div className="btn-prev-c" onClick={slidePrev}>

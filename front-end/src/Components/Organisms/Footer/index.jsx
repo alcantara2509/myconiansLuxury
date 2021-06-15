@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import {
-  iconLinkedIn, iconInstagram, iconTwitter, iconArrowUp,
+  iconFacebook, iconInstagram, iconPinterest, iconArrowUp,
 } from '../../../assets';
 import './style.css';
 
@@ -16,20 +16,20 @@ const Footer = () => (
     <section className="footer-elements-container">
       <section>
         <h3 className="footer-subtitle">Contact</h3>
-        <p className="footer-p">Phone: +30.690.707.4177</p>
-        <p className="footer-p">WhatsApp: +30.690.707.4177</p>
-        <p className="footer-p">E-mail: myconianluxury@gmail.com</p>
+        <p className="footer-p">Phone: ‎+30 694 093 0706</p>
+        <p className="footer-p">WhatsApp: ‎+30 694 093 0706</p>
+        <p className="footer-p">E-mail: contact@myconianluxury.com</p>
       </section>
       <section className="social-container">
         <h3 className="footer-subtitle">Social</h3>
-        <a target="_blank" href="https://www.linkedin.com/" rel="noreferrer">
-          <img src={iconLinkedIn} alt="LinkedIn" className="social-icons" />
+        <a target="_blank" href="https://www.facebook.com/" rel="noreferrer">
+          <img src={iconFacebook} alt="LinkedIn" className="social-icons" />
         </a>
-        <a target="_blank" href="https://www.instagram.com/" rel="noreferrer">
+        <a target="_blank" href="https://www.instagram.com/myconianluxury" rel="noreferrer">
           <img src={iconInstagram} alt="Instagram" className="social-icons" />
         </a>
-        <a target="_blank" href="https://twitter.com/" rel="noreferrer">
-          <img src={iconTwitter} alt="Twitter" className="social-icons" />
+        <a target="_blank" href="https://pinterest.com/" rel="noreferrer">
+          <img src={iconPinterest} alt="Twitter" className="social-icons" />
         </a>
       </section>
     </section>

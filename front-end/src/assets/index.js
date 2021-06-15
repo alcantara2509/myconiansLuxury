@@ -7,9 +7,9 @@ import iconFillFavs from './icons/iconFillFavs.svg';
 import iconEmptyFavs from './icons/iconEmptyFavs.svg';
 import replaceImage from './images/replaceImage.jpeg';
 import iconLogo from './icons/iconLogo.svg';
-import iconLinkedIn from './icons/iconLinkedIn.svg';
-import iconInstagram from './icons/iconInstagram.svg';
-import iconTwitter from './icons/iconTwitter.svg';
+import iconFacebook from './icons/iconFace.svg';
+import iconInstagram from './icons/iconInsta.svg';
+import iconPinterest from './icons/iconPinterest.svg';
 import iconArrowLeft from './icons/iconArrowLeft.svg';
 import iconArrowRight from './icons/iconArrowRight.svg';
 import iconArrowUp from './icons/iconArrowUp.svg';
@@ -76,9 +76,9 @@ export {
   pictureEvents,
   pictureYachtparty1,
   pictureYachtparty2,
-  iconLinkedIn,
+  iconFacebook,
   iconInstagram,
-  iconTwitter,
+  iconPinterest,
   iconArrowLeft,
   iconArrowRight,
   iconArrowUp,

@@ -1,0 +1,13 @@
+.covid-content-container {
+  margin: 100px 0;
+}
+
+.covid-title-banner-container {
+  width: 290px;
+}
+
+@media only screen and (min-width: 830px) {
+  .covid-title-banner-container {
+    width: 900px;
+  }
+}

@@ -1,0 +1,85 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.alice-carousel {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.cover-size {
+  width: 100vw;
+}
+
+.image-size-details {
+  width: 100vw;
+}
+
+.carousel-control-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 26px 0;
+}
+
+.slide-counter {
+  margin: 0 14px;
+  margin-top: -30px;
+}
+
+.btn-prev-c {
+  cursor: pointer;
+}
+
+.btn-next-c {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 830px) {
+  .villa-details-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .cover-size {
+    width: 60vw;
+  }
+  
+  .villa-details-cover-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .fav-button-villa-details {
+    width: 860px;
+    margin: auto;
+  }
+  
+  .fav-button {
+    padding: 12px 27px;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    margin-top: 10px;
+  }
+  
+  .alice-carousel {
+    overflow: hidden;
+    width: 60vw;
+  }
+  
+  .image-size-details {
+    height: 70vh;
+    width: 900px;
+  }
+  
+}
+
+@media only screen and (min-width: 1500px) {
+  .alice-carousel {
+    overflow: hidden;
+    width: 47.5vw;
+  }
+}

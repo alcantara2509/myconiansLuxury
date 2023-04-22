@@ -1,0 +1,62 @@
+.main-title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  text-align: center;
+}
+
+.italic-highlight {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 26px;
+  font-style: italic;
+}
+
+.services-home-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -6px;
+}
+
+.paragraph {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.ParagraphDesktop {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 26px;
+}
+
+.banner-title {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.banner-subtitle {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 830px) {
+  .banner-title {
+    font-size: 48px;
+  }
+  
+  .banner-subtitle {
+    font-size: 24px;
+  }
+}

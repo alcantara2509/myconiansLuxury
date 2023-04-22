@@ -1,0 +1,26 @@
+.image-size-type {
+  width: 100vw;
+  margin-top: 100px;
+}
+
+.type-paragraph {
+  width: 75%;
+}
+
+.services-types-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width: 830px) {
+  .image-size-type {
+    width: 400px !important;
+    height: 275px;
+  }
+  
+  .services-types-container {
+    margin: 0 20px;
+    width: 400px;
+  }
+}

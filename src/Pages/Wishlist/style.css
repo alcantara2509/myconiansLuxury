@@ -1,0 +1,105 @@
+.wishlist-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wish-villa-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0px 4px 4px 0px #00000025;
+  align-items: center;
+  margin: auto;
+}
+
+.wish-villa-info {
+  width: 100%;
+}
+
+.wish-img {
+  width: 120px;
+}
+
+.wish-title {
+  margin: 40px 0;
+}
+
+.wish-title-content {
+  margin-top: -30px;
+  display: flex;
+  padding-left: 16px;
+}
+
+.empty-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.empty-icon {
+  margin-top: 100px;
+  margin-bottom: 12px;
+  width: 68px;
+}
+
+.wish-buttons {
+  display: flex;
+  margin: 100px auto;
+  width: 86%;
+  justify-content: space-around;
+}
+
+.wish-cards-container-yachts {
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
+@media only screen and (min-width: 830px) {
+
+  .wish-cards-container {
+    display: flex;
+    width: 990px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .wish-cards-container-yachts {
+    display: flex;
+    width: 990px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+    margin-top: 50px;
+  }
+
+  .wish-villa-container {
+    width: 295px;
+    height: 306px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wish-villa-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wish-buttons {
+    width: 330px;
+  }
+
+  .wish-img {
+    width: 250px;
+    margin-bottom: 26px;
+  }
+
+}

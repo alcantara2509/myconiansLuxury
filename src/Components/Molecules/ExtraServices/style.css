@@ -1,0 +1,10 @@
+.extra-services-container {
+  margin: 100px auto;
+  width: 80%;
+}
+
+@media only screen and (min-width: 830px) {
+  .extra-services-container {
+    width: 542px;
+  }
+}

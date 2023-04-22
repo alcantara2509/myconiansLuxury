@@ -1,0 +1,26 @@
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 30px;
+  border-bottom: solid 1px #E5E5E5;
+}
+
+@media only screen and (min-width: 830px) {
+  .intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    border-bottom: solid 1px #E5E5E5;
+  }
+
+  .desktop-intro-title {
+    max-width: 490px;
+  }
+  
+  .desktop-p-intro {
+    max-width: 604px;
+  }
+
+}

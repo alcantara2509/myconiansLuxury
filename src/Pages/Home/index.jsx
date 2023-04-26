@@ -24,13 +24,13 @@ const Home = () => (
     <MenuDesktop />
     <HomeBanner />
     <IntroHome />
-    <VillasHome />
+    {/* <VillasHome /> */}
     {/* <VillasHomeDesktop /> */}
     <YachtHome />
     <YachtHomeDesktop />
     {/* <ConciergeHome /> */}
     {/* <ConciergeHomeDesktop /> */}
-    <ServicesHome />
+    {/* <ServicesHome /> */}
     <DarkSection />
     <Footer />
   </main>

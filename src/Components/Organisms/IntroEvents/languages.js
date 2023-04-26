@@ -33,18 +33,18 @@ export const portuguese = {
 };
 
 export const spanish = {
-  title: "the art of luxury events",
+  title: "la arte de los eventos de lujo",
   paragraph:
-    "We pride ourselves in offering first-class luxury services with full attention to every detail. Our event/party planners have the know-how to bring about the best results whatever the occasion demands. We will conceptualize and create a spectacular world-class event/party!",
+    "Nos enorgullece ofrecer servicios de lujo de primera clase con atención total a cada detalle. Nuestros organizadores de eventos/fiestas tienen el conocimiento para obtener los mejores resultados en cualquier ocasión. ¡Concebir y crear un evento/fiesta espectacular de primera clase es nuestra especialidad!",
   subTitle:
-    "Discover unparalleled detail, expertise and experience in luxury event planning.",
-  servicesTitle1: "luxury weddings",
+    "Descubre detalles, experiencias y conocimientos inigualables en la planificación de eventos de lujo.",
+  servicesTitle1: "bodas de lujo",
   servicesParagraph1:
-    "Experience your special occasion with us & create memories that will last a lifetime!",
-  servicesTitle2: "yacht parties",
+    "¡Viva su ocasión especial con nosotros y cree recuerdos que durarán toda la vida!",
+  servicesTitle2: "fiestas en yates",
   servicesParagraph2:
-    "Yacht parties are a must-have during your holidays in the greek islands!",
-  servicesTitle3: "other events",
+    "¡Las fiestas en yates son obligatorias durante sus vacaciones en las islas griegas!",
+  servicesTitle3: "otros eventos",
   servicesParagraph3:
-    "Private Parties | Corporate Events Bachelor | Baptism | Ceremonies",
+    "Fiestas Privadas | Eventos Corporativos Despedidas de Soltero | Bautizos | Ceremonias",
 };

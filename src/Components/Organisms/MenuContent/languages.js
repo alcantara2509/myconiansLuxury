@@ -18,9 +18,9 @@ export const portuguese = {
 
 export const spanish = {
   link1: "Villas",
-  link2: "Yachts",
-  link3: "Destinations",
-  link4: "24/7 Services",
-  link5: "Event Planning",
-  link6: "My Wishlist",
+  link2: "Yates",
+  link3: "Destinos",
+  link4: "Servicios 24/7",
+  link5: "Evento planeado",
+  link6: "Mi Wishlist",
 };

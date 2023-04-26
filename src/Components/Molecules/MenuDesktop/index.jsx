@@ -34,6 +34,7 @@ const MenuDesktop = () => {
 
   const setFlag = () => {
     if (selectedLanguage === "br") return iconFlagBr;
+    if (selectedLanguage === "sp") return iconFlagSp;
     return iconFlagUsa;
   };
 

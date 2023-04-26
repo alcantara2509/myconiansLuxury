@@ -1,11 +1,11 @@
 export const english = {
-  title: 'property features',
+  title: "property features",
 };
 
 export const portuguese = {
-  title: 'características da propriedade',
+  title: "características da propriedade",
 };
 
 export const spanish = {
-  title: 'property features',
+  title: "caracteristicas de la propiedad",
 };

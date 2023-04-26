@@ -1,11 +1,11 @@
 export const english = {
-  button: 'SEE VILLA',
+  button: "SEE VILLA",
 };
 
 export const portuguese = {
-  button: 'VER VILA',
+  button: "VER VILA",
 };
 
 export const spanish = {
-  button: 'SEE VILLA',
+  button: "VER VILLA",
 };

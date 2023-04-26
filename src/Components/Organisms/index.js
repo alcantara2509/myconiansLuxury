@@ -9,6 +9,7 @@ import DarkSection from "./DarkSection";
 import DarkSectionVilla from "./DarkSectionVilla";
 import DarkSectionYacht from "./DarkSectionYacht";
 import DarkSectionEnjoy from "./DarkSectionEnjoy";
+import DarkSectionDestinations from "./DarkSectionDestinations";
 import Footer from "./Footer";
 import MenuContent from "./MenuContent";
 import IntroVillas from "./IntroVillas";
@@ -59,6 +60,7 @@ export {
   DarkSectionVilla,
   DarkSectionYacht,
   DarkSectionEnjoy,
+  DarkSectionDestinations,
   IntroYachts,
   IntroDestinations,
 };

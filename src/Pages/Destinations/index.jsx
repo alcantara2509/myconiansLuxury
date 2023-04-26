@@ -5,7 +5,7 @@ import {
   PagesBanner,
 } from "../../Components/Molecules";
 import {
-  DarkSectionEnjoy,
+  DarkSectionDestinations,
   Footer,
   IntroDestinations,
 } from "../../Components/Organisms";
@@ -24,7 +24,7 @@ const Events = () => (
       subTitle={languages(english, portuguese, spanish).subTitle}
     />
     <IntroDestinations />
-    <DarkSectionEnjoy />
+    <DarkSectionDestinations />
     <Footer />
   </main>
 );

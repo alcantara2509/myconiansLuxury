@@ -5,13 +5,13 @@ export const english = {
 };
 
 export const portuguese = {
-  title: "planejamento de eventos",
+  title: "Destinos",
   subTitle:
-    "Mais do que criar eventos de luxo, orquestramos experiências memoráveis.",
+    "Sua empresa premium de concierge agora está presente em várias localidades do mundo!",
 };
 
 export const spanish = {
-  title: "Destinations",
+  title: "Destinos",
   subTitle:
-    "More than creating luxury events, we orchestrate memorable experiences.",
+    "¡Su empresa de conserjería premium ahora está presente en varios lugares del mundo!",
 };

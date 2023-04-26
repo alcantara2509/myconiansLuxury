@@ -20,7 +20,6 @@ import {
   destinationsSaintTropez,
   destinationsSantorini,
   destinationsTulum,
-  pictureEvents,
 } from "../../../assets";
 import languages from "../../../Utils/languages";
 import { english, portuguese, spanish } from "./languages";

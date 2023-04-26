@@ -5,7 +5,7 @@ import Colors from "../../../Colors";
 import bannerYachts from "../../../assets/images/bannerWorldwide.jpeg";
 import { DarkButton } from "../../Atoms";
 import languages from "../../../Utils/languages";
-import { english, portuguese, spanish } from "./languages";
+import { english, portuguese, spanish } from "../YachtHome/languages";
 
 const LinkSectionHome = () => (
   <section className="link-section-home-desktop desktop">

@@ -8,13 +8,13 @@ export const english = {
 export const portuguese = {
   title: "Destinos",
   paragraph:
-    "Explore o melhor da Grécia em um iate de luxo. Oferecemos uma lista de serviços premium e atividades personalizadas para tornar as suas férias em um iate únicas. Alugue um iate e explore as ilhas próximas, pratique esportes aquáticos e descubra praias espetaculares.",
-  darkButton: "ver frota de iates",
+    "Bem-vindo ao mundo de possibilidades sem limites com Myconian Luxury! A nossa empresa de concierge premium não para de crescer e estamos muito felizes em anunciar que agora estamos presentes em várias regiões do mundo!",
+  darkButton: "saiba mais",
 };
 
 export const spanish = {
-  title: "luxury yachting",
+  title: "Destinos",
   paragraph:
-    "Explore the best of Greece on a luxury yacht charter. A list of luxury services and activities added to make your yacht holidays unique. Charter a yacht and explore the nearby islands, practice water sports and discover spectacular beaches.",
-  darkButton: "see yacht charter",
+    "¡Bienvenido al mundo de posibilidades ilimitadas con Myconian Luxury! ¡Nuestra empresa premium de conserjería sigue creciendo y nos complace anunciar que ahora estamos presentes en varias regiones de todo el mundo!",
+  darkButton: "saber más",
 };

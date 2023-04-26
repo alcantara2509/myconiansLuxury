@@ -1,0 +1,14 @@
+.dark-section-container {
+  background-color: #1C3C45;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 40px;
+}
+
+@media only screen and (min-width: 830px) {
+  .dark-section-container {
+    padding: 100px 470px;
+  }
+  
+}
